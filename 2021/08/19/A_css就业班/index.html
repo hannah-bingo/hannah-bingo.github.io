@@ -6,24 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://hannah-bingo.github.io">
-  <title>ES6模块化+Promise+EventLoop+API | 翼遥bingo的个人博客</title>
+  <title>CSS就业班 | 翼遥bingo的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用ES6的模块化语法 使用Promise 解决回调地狱的问题 如何使用async&#x2F;await简化Promise的调用 说出Event Loop 说出宏任务与微任务的执行顺序">
+  <meta name="description" content="第一章1-1  VScode和HTML5">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ES6模块化+Promise+EventLoop+API">
-<meta property="og:url" content="http://hannah-bingo.github.io/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/index.html">
+<meta property="og:title" content="CSS就业班">
+<meta property="og:url" content="http://hannah-bingo.github.io/2021/08/19/A_css%E5%B0%B1%E4%B8%9A%E7%8F%AD/index.html">
 <meta property="og:site_name" content="翼遥bingo的个人博客">
-<meta property="og:description" content="使用ES6的模块化语法 使用Promise 解决回调地狱的问题 如何使用async&#x2F;await简化Promise的调用 说出Event Loop 说出宏任务与微任务的执行顺序">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.loli.net/2021/08/16/74uyKH3VUrqEQeD.png">
-<meta property="og:image" content="https://i.loli.net/2021/08/16/jVra4y52ekdlnWY.png">
-<meta property="og:image" content="https://i.loli.net/2021/08/16/HlJmX2RYIVahvO4.png">
-<meta property="og:image" content="https://i.loli.net/2021/08/16/7SzfjkdKJW6ytlA.png">
-<meta property="article:published_time" content="2021-08-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-09-19T09:15:40.132Z">
+<meta property="og:description" content="第一章1-1  VScode和HTML5">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/html+css/777.png">
+<meta property="og:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/222.png">
+<meta property="og:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/111.png">
+<meta property="og:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/333.png">
+<meta property="og:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/555.png">
+<meta property="og:image" content="c:/Users/Hannah/AppData/Roaming/Typora/typora-user-images/image-20210616230214055.png">
+<meta property="og:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/777.png">
+<meta property="og:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/888.png">
+<meta property="og:image" content="http://hannah-bingo.github.io/2021/08/19/A_css%E5%B0%B1%E4%B8%9A%E7%8F%AD/media/pig.jpg">
+<meta property="article:published_time" content="2021-08-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-09-19T09:21:20.758Z">
 <meta property="article:author" content="Hannah">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/08/16/74uyKH3VUrqEQeD.png">
+<meta name="twitter:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/html+css/777.png">
   
     <link rel="alternative" href="/atom.xml" title="翼遥bingo的个人博客" type="application/atom+xml">
   
@@ -163,441 +168,356 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-E_ES6模块化+Promise+EventLoop+API" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-A_css就业班" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      ES6模块化+Promise+EventLoop+API
+      CSS就业班
     </h1>
   
 
         
-        <a href="/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/" class="archive-article-date">
-  	<time datetime="2021-08-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-20</time>
+        <a href="/2021/08/19/A_css%E5%B0%B1%E4%B8%9A%E7%8F%AD/" class="archive-article-date">
+  	<time datetime="2021-08-18T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<ul>
-<li>使用ES6的模块化语法</li>
-<li>使用Promise 解决回调地狱的问题</li>
-<li>如何使用async/await简化Promise的调用</li>
-<li>说出Event Loop</li>
-<li>说出宏任务与微任务的执行顺序</li>
-</ul>
-</blockquote>
- <span id="more"></span>
+        <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h4 id="1-1-VScode和HTML5"><a href="#1-1-VScode和HTML5" class="headerlink" title="1-1  VScode和HTML5"></a>1-1  VScode和HTML5</h4> <span id="more"></span>
 
-
-
-
-
-<h2 id="第一章-ES6模块化与异步编程高级用法"><a href="#第一章-ES6模块化与异步编程高级用法" class="headerlink" title="第一章 ES6模块化与异步编程高级用法"></a>第一章 ES6模块化与异步编程高级用法</h2><h5 id="1-1-回顾＋模块化"><a href="#1-1-回顾＋模块化" class="headerlink" title="1-1  回顾＋模块化"></a>1-1  回顾＋模块化</h5><ol>
-<li><p>回顾： node.js如何实行模块化</p>
-<ul>
-<li>node.js 遵循了CommonJS的模块化规范：（1）导入其他模块使用<code>require()</code>方法</li>
-<li>模块对外共享成员使用<code>module.exports</code>对象</li>
+<ol>
+<li><img src="D:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/html+css/777.png" alt="777"></li>
+<li>HTML5：万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。作为新的HTML语言，具有新的元素、属性和行为</li>
+<li>XHTML–&gt;HTML :<ul>
+<li>增加了新特性： 语义特性、本地储存特性、设备兼容特性、连接特性、网页多媒体特性、三维、图形及特效特性，性能与集成特性，CSS3特性</li>
 </ul>
 </li>
-<li><p>模块化的好处 ：</p>
-<ul>
-<li>都遵循相同的代码规范写代码，降低了沟通的成本，极大方便了各个模块之间的相互调用</li>
-</ul>
-</li>
-<li><p>前端模块化规范的分类：</p>
-<ul>
-<li>在ES6规范化规范诞生之前，JavaScript社区已经尝试并提出AMD、CMD、CommonJS等模块化规范</li>
-<li>这些由社区提出的模块化标准，存在一定的局限性和差异性，并不是所有浏览器与服务器通用的模块化标准。<ul>
-<li>例如: AMD和CMD适用于浏览器端的JavaScript</li>
-<li>CommonJS使用于服务器端的JavaScript模块化</li>
-</ul>
-</li>
-<li>太多的模块化规范给开发者增加了学习的难度金额开发的成本，因此，大一统的ES６模块化规范诞生了！<h5 id="1-2-ES6模块化规范"><a href="#1-2-ES6模块化规范" class="headerlink" title="1-2 ES6模块化规范"></a>1-2 ES6模块化规范</h5></li>
-</ul>
-</li>
-<li><p>ES6 模块化规范的定义：</p>
-<ul>
-<li>ES6模块化规范是浏览器与服务器端通用的模块化开发规范。它的出现极大降低了前端开发者的模块化学习成本</li>
-</ul>
-</li>
-<li><p>ES6模块规范定义：</p>
-<ul>
-<li>每个JS文件都是一个独立的模块</li>
-<li>导入其他模块成员使用 <code>import</code>关键字</li>
-<li>向外共享模块成员使用<code>export</code>关键字</li>
-</ul>
-</li>
-<li><p>在node.js中默认仅支持CommonJS模块化规范，若想基于node.js体验与学习ES6的模块化语法，可以按照如下两个步骤进行配置 ：</p>
-<ul>
-<li>确保安装v14.15.1或更高版本的node.js</li>
-<li>在package.json 的根节点中添加“type”：“module”节点</li>
-</ul>
-</li>
+</ol>
+<h4 id="1-2-HTML5新增语义标签"><a href="#1-2-HTML5新增语义标签" class="headerlink" title="1-2 HTML5新增语义标签"></a>1-2 HTML5新增语义标签</h4><ol>
+<li></li>
+</ol>
+<h4 id="1-3-HTML5新增多媒体标签"><a href="#1-3-HTML5新增多媒体标签" class="headerlink" title="1-3 HTML5新增多媒体标签"></a>1-3 HTML5新增多媒体标签</h4><ol>
 <li><ul>
-<li><p><code>ctrl + ~</code>——-&gt; npm init -y  ： 快速初始化一个包管理配置文件（package.json）</p>
-<ul>
-<li>添加<code>&quot;type&quot;： “module&quot;，</code></li>
+<li><img src="D:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/222.png" alt="222"></li>
+<li><img src="D:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/111.png" alt="111"></li>
 </ul>
 </li>
+<li><p>因为不同浏览器支持不同格式，我们采取的解决方法： 为音频准备多个格式</p>
+<ul>
+<li><p>```</p>
+<audio>
+    <source src = "media/snow.mp3" type="audio/mpeg">
+    <source src = "media/snow.ogg" type="audio/mpeg">
+    您的浏览器太low了
+</audio>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- ```</span><br><span class="line">  &lt;vedio&gt;</span><br><span class="line">  	&lt;audio&gt;</span><br><span class="line">  	&lt;source src = &quot;media/video.mp4&quot; type=&quot;video/mp4&quot;&gt;</span><br><span class="line">  	&lt;source src = &quot;media/video.ogg&quot; type=&quot;video/ogg&quot;&gt;</span><br><span class="line">  	您的浏览器太low了</span><br><span class="line">  &lt;/audio&gt;</span><br><span class="line">  &lt;/vedio&gt;</span><br></pre></td></tr></table></figure></li>
+<li></li>
 </ul>
+</li>
+<li><p> <img src="D:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/333.png" alt="333"></p>
 </li>
 </ol>
-<h5 id="1-3-导出与默认导入"><a href="#1-3-导出与默认导入" class="headerlink" title="1-3 导出与默认导入"></a>1-3 导出与默认导入</h5><ol>
-<li>默认导出 ：<code>export default</code>默认导出的成员<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> n1 = <span class="number">10</span>;    <span class="comment">//定义模块私有成员 n1</span></span><br><span class="line"><span class="keyword">let</span> n2 = <span class="number">20</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">show</span>(<span class="params"></span>)</span>&#123;&#125;    <span class="comment">//定义模块私有方法 show</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span>	<span class="keyword">default</span> &#123;</span><br><span class="line">    n1,show</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>默认导入的语法 ： <code>import 接受名称 form &#39;模块块标识符&#39;;</code><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> m1 <span class="keyword">from</span> <span class="string">&#x27;./默认导入.js&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(m1);	<span class="comment">//&#123; n1: 10, show: [Function: show] &#125;</span></span><br></pre></td></tr></table></figure></li>
-<li>默认导出与默认导入的注意事项 </li>
-</ol>
 <ul>
-<li>只能使用唯一的默认导出<code>export</code></li>
-<li>默认导入时的接收名称可以是任意名称，只要合法的成员名称即可;</li>
+<li>poster=””(图片地址)</li>
 </ul>
-<h5 id="1-4-按需导入与按需导出"><a href="#1-4-按需导入与按需导出" class="headerlink" title="1-4 按需导入与按需导出"></a>1-4 按需导入与按需导出</h5><ol>
-<li><p>按需导出 ：<code>export 按需导出的成员；</code> </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> s1 = <span class="string">&#x27;aaa&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> s2 = <span class="string">&#x27;ccc&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">say</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>按需导入 ： </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;s1，s2,say&#125; <span class="keyword">from</span> <span class="string">&#x27;模块标识符&#x27;</span></span><br><span class="line"></span><br><span class="line">log(s1);  <span class="comment">//打印输出 aaa</span></span><br><span class="line">log(say);	<span class="comment">//打印输出 [Function ： say]</span></span><br></pre></td></tr></table></figure></li>
-<li><p>注意事项 ： </p>
-<ul>
-<li><p>每个模块中可以<strong>多次</strong>按需导出</p>
-</li>
-<li><p>按需<strong>导入的成员名称</strong> 必须和<strong>按需导入的名称</strong>保持一致</p>
-</li>
-<li><p>按需导入时，可以使用<strong>as关键字</strong>进行重命名  </p>
-<ul>
-<li> <code>import&#123;s2 as atr2&#125; from &#39;&#39;</code></li>
-<li>log(s2);</li>
-</ul>
-</li>
-<li><p>按需导入可以和默认导入一起使用(默认导入的不需要写在花括号中)</p>
-<ul>
-<li><p>导入 ：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> info, &#123; s1, say &#125; <span class="keyword">from</span> <span class="string">&#x27;./02.按需导出.js&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(s1)</span><br><span class="line"><span class="built_in">console</span>.log(say)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(info);</span><br></pre></td></tr></table></figure></li>
-<li><p>导出</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> s1 = <span class="string">&#x27;aaa&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> s2 = <span class="string">&#x27;ccc&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">say</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123; <span class="comment">//默认导出</span></span><br><span class="line">    <span class="attr">a</span>: <span class="number">20</span> <span class="comment">//必须赋值才能导出</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h5 id="1-5-直接导入并执行模块中的代码"><a href="#1-5-直接导入并执行模块中的代码" class="headerlink" title="1-5 直接导入并执行模块中的代码"></a>1-5 直接导入并执行模块中的代码</h5><ol>
-<li><p><strong>只是想单纯执行某个模块中的代码</strong>，并不需要得到模块中向外共享的成员。可以直接导入并执行模块代码</p>
-</li>
-<li><p>示例代码 ：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 当前文件模块为 03</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i =<span class="number">0</span>; i &lt; <span class="number">3</span>; i++)&#123;</span><br><span class="line">    log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">----------------------------------</span><br><span class="line"><span class="comment">//直接导入并执行模块代码，不需要得到模块向外共享的成员</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;03&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">-----------结果-----</span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="第二章-Promise"><a href="#第二章-Promise" class="headerlink" title="第二章 Promise"></a>第二章 Promise</h2><h5 id="2-1-回调地狱及Promise的作用"><a href="#2-1-回调地狱及Promise的作用" class="headerlink" title="2-1 回调地狱及Promise的作用"></a>2-1 回调地狱及Promise的作用</h5><ol>
-<li><p>多层回调函数的相互嵌套，就形成了<strong>回调地狱</strong></p>
-<ul>
-<li>代码耦合性太强，如果想要更改顺序，牵一发而动全身，难以维护</li>
-<li>大量的冗杂代码相互嵌套，代码的<strong>可读性变差</strong></li>
-</ul>
-</li>
-<li><p>例如 ：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>( <span class="function">() =&gt;</span> &#123;	<span class="comment">//第一层回调函数</span></span><br><span class="line">    log(<span class="string">&#x27;延时1s输出&#x27;</span>);</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;	<span class="comment">//第2层回调函数</span></span><br><span class="line">        log(<span class="string">&#x27;在延时2秒输出&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span> &#123;</span><br><span class="line">            log(<span class="string">&quot;在延时3秒输出&quot;</span>)</span><br><span class="line">        &#125;，<span class="number">3000</span>)  </span><br><span class="line">    &#125;，<span class="number">2000</span>）</span><br><span class="line">&#125;，<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h5 id="2-2-Promis的基本概念"><a href="#2-2-Promis的基本概念" class="headerlink" title="2-2 Promis的基本概念"></a>2-2 Promis的基本概念</h5><ol>
-<li><p>Promise是一个构造函数</p>
-<ul>
-<li>可以创建Promise的 实例： <code>const p = new Promise();</code></li>
-<li>new 出来的 Promise 实例对象，<strong>代表一个异步操作</strong></li>
-</ul>
-</li>
-<li><p>Promise.prototype (构造函数的原型对象)上包含一个 <code>.then()</code>方法</p>
-<ul>
-<li>每一次<code>new Promise()</code>构造函数得到的实例对象，</li>
-<li>都可以<strong>通过原型链的方式</strong>访问到.then()方法，例如 ：p.then()</li>
-</ul>
-</li>
-<li><p>.then() 方法用来预先指定成功和失败的回调函数</p>
-<ul>
-<li>p.then(成功的回调函数， 失败的回调函数)</li>
-<li>p.then(result =&gt; {}, error =&gt;{})</li>
-<li>调用.then() 方法时，成功的回调函数是必选的，失败的回调函数是可选的</li>
-</ul>
-</li>
-</ol>
-<h5 id="2-3-基于回调函数按顺序读取文件内容-amp-then－fs的基本使用"><a href="#2-3-基于回调函数按顺序读取文件内容-amp-then－fs的基本使用" class="headerlink" title="2-3 基于回调函数按顺序读取文件内容&amp;ｔｈｅｎ－ｆｓ的基本使用"></a>2-3 基于<strong>回调函数</strong>按顺序读取文件内容&amp;ｔｈｅｎ－ｆｓ的基本使用</h5><ol>
-<li><p>提出问题 ： 如何解决如下的回调函数</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">fs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>,<span class="string">&#x27;utf8&#x27;</span>,<span class="function">(<span class="params">err1,r1</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(err1) <span class="keyword">return</span> log(err1,message)	<span class="comment">//读取文件1	失败</span></span><br><span class="line">    log (r1);	<span class="comment">// 读取 文件 1 成功</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 读取文件 2.txt</span></span><br><span class="line">    fs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>,<span class="string">&#x27;utf8&#x27;</span>,<span class="function">(<span class="params">err2,r2</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(err2) <span class="keyword">return</span> log(err2.message)	<span class="comment">//读取文件 2 失败</span></span><br><span class="line">        log(r2)	<span class="comment">//读取文件 2 失败</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 读取文件 3.txt</span></span><br><span class="line">        fs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>,<span class="string">&#x27;utf8&#x27;</span>,<span class="function">(<span class="params">err3,r3</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">if</span>(err3) <span class="keyword">return</span> log(err3,message)	<span class="comment">//读取文件 3 失败</span></span><br><span class="line">            log(r3)	<span class="comment">//读取文件 3 成功</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
-<li><p>由于node.js官方提供的fs模块<strong>仅支持</strong>以<strong>回调函数等方式</strong>读取文件，不支持Promise的调用方式</p>
-<ul>
-<li>因此，需要先运行如下的命令，安装<code>then-fs</code>这个第三方包，从而支持我们基于Promise的方式读取文件的内容</li>
-<li><code>npm install then-fs</code></li>
-</ul>
-</li>
-<li><p>调用then-fs 提供的read File（）方法，可以异步读取文件的内容，<strong>它的返回值是Promise的实例对象</strong>。</p>
-<ul>
-<li><p>可以调用<code>.then()方法</code>为每个Promise异步操作指定<strong>成功</strong>和*<strong>失败</strong>之后的回调函数。</p>
-</li>
-<li><p>示例代码：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*基于 Promise 的方式读取文件</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line">thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>).then(<span class="function">(<span class="params">r1</span>) =&gt;</span> &#123; <span class="built_in">console</span>.log(r1) &#125;)</span><br><span class="line">thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>).then(<span class="function">(<span class="params">r2</span>) =&gt;</span> &#123; <span class="built_in">console</span>.log(r2) &#125;)</span><br><span class="line">thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>).then(<span class="function">(<span class="params">r3</span>) =&gt;</span> &#123; <span class="built_in">console</span>.log(r3) &#125;)</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ol>
-<h5 id="2-4-then-方法以及基于Promise-按顺序读取文件的内容-amp-通过catch方法捕获错误"><a href="#2-4-then-方法以及基于Promise-按顺序读取文件的内容-amp-通过catch方法捕获错误" class="headerlink" title="2-4 .then()方法以及基于Promise 按顺序读取文件的内容 &amp;通过catch方法捕获错误"></a>2-4 .then()方法以及基于Promise 按顺序读取文件的内容 &amp;通过catch方法捕获错误</h5><ol>
-<li><p>如果上一个.then()方法返回了一个新的Promise实例对象，则可以通过下一个.then()继续进行处理。</p>
-<ul>
-<li>通过.then()方法的链式调用 ， 就解决了回调地狱的问题</li>
-</ul>
-</li>
-<li><p>```js<br>import thenFs from ‘then-fs’</p>
-<p>thenFs</p>
-<pre><code>.readFile(&#39;./files/1.txt&#39;, &#39;utf8&#39;)
-.then((r1) =&gt; &#123;
-    console.log(r1)
-    return thenFs.readFile(&#39;./files/2.txt&#39;, &#39;utf8&#39;)
-&#125;)
-.then((r2) =&gt; &#123;
-    console.log(r2);
-    return thenFs.readFile(&#39;./files/3.txt&#39;, &#39;utf8&#39;)
-&#125;)
-.then((r3) =&gt; &#123;
-    console.log(r3);
-&#125;)
-</code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">3.  通过.catch方法捕获错误</span><br><span class="line"></span><br><span class="line">   - 在Promise的链式操作如果发生了错误，可以使用`Promise.prototype.catch`方法进行捕获和处理 ：</span><br><span class="line"></span><br><span class="line">     ```js</span><br><span class="line">     import thenFs from &#x27;then-fs&#x27;</span><br><span class="line">     </span><br><span class="line">     thenFs</span><br><span class="line">         .readFile(&#x27;./files/11.txt&#x27;, &#x27;utf8&#x27;)</span><br><span class="line">         .then((r1) =&gt; &#123;</span><br><span class="line">             console.log(r1)</span><br><span class="line">             return thenFs.readFile(&#x27;./files/2.txt&#x27;, &#x27;utf8&#x27;)</span><br><span class="line">         &#125;)</span><br><span class="line">         .then((r2) =&gt; &#123;</span><br><span class="line">             console.log(r2);</span><br><span class="line">             return thenFs.readFile(&#x27;./files/3.txt&#x27;, &#x27;utf8&#x27;)</span><br><span class="line">         &#125;)</span><br><span class="line">         .then((r3) =&gt; &#123;</span><br><span class="line">             console.log(r3);</span><br><span class="line">         &#125;)</span><br><span class="line">         .catch((err) =&gt; &#123;</span><br><span class="line">             console.log(err.message);</span><br><span class="line">         &#125;)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>如果不希望前面的错误导致后续的.then无法正常执行，则可以将.catch 的调用提前，示例 ：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line">thenFs</span><br><span class="line">    .readFile(<span class="string">&#x27;./files/11.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(err.message);</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function">(<span class="params">r1</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(r1)</span><br><span class="line">        <span class="keyword">return</span> thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function">(<span class="params">r2</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(r2);</span><br><span class="line">        <span class="keyword">return</span> thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function">(<span class="params">r3</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(r3);</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ol>
-<h5 id="2-5-Promise-—-Promise-all-以及Promise-race-方法"><a href="#2-5-Promise-—-Promise-all-以及Promise-race-方法" class="headerlink" title="2-5 Promise —- Promise.all()以及Promise.race()方法"></a>2-5 Promise —- Promise.all()以及Promise.race()方法</h5><ol>
-<li> Promise.all()方法会发起并行的Promise异步操作， 等所有的异步操作全部结束后才会执行下一步的.then 操作（等待机制）</li>
-</ol>
-<ul>
-<li>示例代码 ： </li>
-</ul>
-   <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> promiseArr = [</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">]</span><br><span class="line"><span class="built_in">Promise</span>.all(promiseArr).then(<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//结果</span></span><br><span class="line">[ <span class="string">&#x27;1111&#x27;</span>, <span class="string">&#x27;222\r\n&#x27;</span>, <span class="string">&#x27;333&#x27;</span> ]</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>Promise.race()方法会发起并行的Promise异步操作，只要任何一个异步操作完成，就立刻执行下一步的.then操作（赛跑机制）</p>
-<ul>
-<li><p>实例代码 ：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> promiseArr = [</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">]</span><br><span class="line"><span class="built_in">Promise</span>.race(promiseArr).then(<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//运行结果</span></span><br><span class="line"><span class="number">222</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ol>
-<h5 id="2-6-基于Promise封装读文件的方法"><a href="#2-6-基于Promise封装读文件的方法" class="headerlink" title="2-6 基于Promise封装读文件的方法"></a>2-6 基于Promise封装读文件的方法</h5><ol>
-<li><p>方法的封装要求 ：</p>
-<ul>
-<li>方法的名称要定义为getFile</li>
-<li>方法接收一个<strong>形参fpath</strong>，表示要读取的文件的路径</li>
-<li>方法的返回值为Promise实例对象</li>
-</ul>
-</li>
-<li><p>getFile方法的基本定义 ：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">   </span><br></pre></td></tr></table></figure></li>
-<li><p>创建具体的异步操作</p>
-<ul>
-<li><p>则需要在new Promise() 构造函数期间， <strong>传递一个function函数</strong>，将具体的异步操作定义到function函数内部</p>
-</li>
-<li><p>示例代码 ：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 方法的名称为 getFile</span></span><br><span class="line"><span class="comment">// 2. 方法接收一个形参 fpath，表示要读取的文件的路径</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFile</span>(<span class="params">fpath</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//3. 方法的返回值为Promise实例对象</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">//注意： 该行代码中的new Promise()只是创建了一个形式上的异步操作（不知道是读文件的还是ajax的）</span></span><br><span class="line">        <span class="comment">// 4. 下面这行代码，表示这是一个具体的、读文件的异步操作</span></span><br><span class="line">        fs.readFile(fpath, <span class="string">&#x27;utf8&#x27;</span>, <span class="function">(<span class="params">err, dataStr</span>) =&gt;</span> &#123;&#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ol>
-<h5 id="2-7-async-await"><a href="#2-7-async-await" class="headerlink" title="2-7 async /await"></a>2-7 async /await</h5><ol>
-<li><p>什么是async / await</p>
-<ul>
-<li><p> async / await 是ES８（ECMAScript 2017）引入的新语法，用来简化 Promise 异步操作</p>
-</li>
-<li><p>在async / await 出现之前， 开发者只能通过链式 .then() 的方式 处理Promise 异步操作、</p>
-</li>
-<li><p>上面有示例，.then链式的优缺点 ：</p>
-<ul>
-<li>优点： 解决了回调地狱的问题</li>
-<li>缺点 ： 代码冗杂、阅读性差、不易理解</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>示例:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getAllFile</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> r1 = <span class="keyword">await</span> thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(r1);</span><br><span class="line">    <span class="keyword">const</span> r2 = <span class="keyword">await</span> thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(r2);</span><br><span class="line">    <span class="keyword">const</span> r3 = <span class="keyword">await</span> thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(r3);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getAllFile()</span><br></pre></td></tr></table></figure></li>
-<li><p>async / await 的使用事项</p>
-<ul>
-<li><p>如果在function中使用了await ,则function 必须被 async 修饰</p>
-</li>
-<li><p>在async 方法中, 第一个await之前的代码会同步执行, await之后的代码会异步修饰</p>
-</li>
-<li><pre><code class="js">import thenFs from &#39;then-fs&#39;
-
-console.log(&#39;A&#39;);
-async function getAllFile() &#123;
-    console.log(&#39;B &#39;);
-    const r1 = await thenFs.readFile(&#39;./files/1.txt&#39;, &#39;utf8&#39;);
-    console.log(r1);
-    const r2 = await thenFs.readFile(&#39;./files/2.txt&#39;, &#39;utf8&#39;)
-    console.log(r2);
-    const r3 = await thenFs.readFile(&#39;./files/3.txt&#39;, &#39;utf8&#39;)
-    console.log(r3);
-    console.log(&#39;D&#39;);
-&#125;
-
-getAllFile()
-console.log(&#39;C&#39;);
-</code></pre>
-<ul>
-<li><p>运行结果:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">A</span><br><span class="line">B </span><br><span class="line">C</span><br><span class="line"><span class="number">1111</span></span><br><span class="line"><span class="number">222</span></span><br><span class="line"></span><br><span class="line"><span class="number">333</span></span><br><span class="line">D</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h5 id="2-8-EventLoop"><a href="#2-8-EventLoop" class="headerlink" title="2-8 EventLoop"></a>2-8 EventLoop</h5><ol>
-<li><p>JavaScript是单线程的语言</p>
-<ul>
-<li>JavaScript 是一门<strong>单线程执行</strong>的编程语言,也就是说,同一时间只能做一件事</li>
-<li>单线程执行任务队列的问题 :<ul>
-<li>如果前一个任务非常耗时,则后续的任务不得不一直等待,从而导致<strong>程序假死</strong>的问题</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>同步任务和异步任务 :</p>
-<ul>
-<li>JavaScript 把待执行的任务分为两类:(同步任务和异步任务)</li>
-<li>同步任务 (synchronous) : <ul>
-<li>又叫<strong>非耗时任务</strong>,指的是在主线程上排队执行的那些任务</li>
-<li>只有前一个任务执行完毕,才能执行后一个任务</li>
-</ul>
-</li>
-<li>异步任务(asynchronous)<ul>
-<li><p>又叫做耗时任务,异步任务由JavaScript <strong>委托给</strong>宿主环境进行执行</p>
-</li>
-<li><p>当异步任务执行完成后,会<strong>通知JavaScript主线程</strong>执行异步任务的回调函数</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>EventLoop的基本概念</p>
-<ul>
-<li>JavaScript主线程从“任务队列”中读物异步任务的回调函数，放到执行栈中依次执行</li>
-<li>这个过过程循环不断，所以整个的这种运行机制又称为 EventLoop（事件循环）</li>
-<li> <img src="https://i.loli.net/2021/08/16/74uyKH3VUrqEQeD.png" alt="1"></li>
-</ul>
-</li>
-<li><p>结合 EventLoop 分析输出的顺序</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line">log(<span class="string">&#x27;A&#x27;</span>)</span><br><span class="line">thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>,<span class="string">&#x27;utf8&#x27;</span>).then(<span class="function"><span class="params">dataStr</span> =&gt;</span> &#123;</span><br><span class="line">    log(<span class="string">&#x27;B&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    log(<span class="string">&#x27;C&#x27;</span>)</span><br><span class="line">&#125;,<span class="number">0</span>)</span><br><span class="line">log(<span class="string">&#x27;D&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//运行结果</span></span><br><span class="line">ADCB</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>A和D属于 <strong>同步任务</strong>，会根据代码的先后顺序<strong>依次被执行</strong></li>
-<li>C和B属于异步任务，他们的回调函数会被加入到任务队列中，等待主线程空闲时在执行</li>
-</ul>
-</li>
-</ol>
-<h2 id="第三章-宏任务和微任务-amp-API"><a href="#第三章-宏任务和微任务-amp-API" class="headerlink" title="第三章  宏任务和微任务 &amp; API"></a>第三章  宏任务和微任务 &amp; API</h2><h5 id="3-1-宏任务和微任务"><a href="#3-1-宏任务和微任务" class="headerlink" title="3-1 宏任务和微任务"></a>3-1 宏任务和微任务</h5><ol>
-<li><p>JavaScript 把异步任务又做了进一步的划分， 异步任务又分为两类</p>
-<ul>
-<li>宏任务 （macrotask）：<ul>
-<li>异步Ajax请求</li>
-<li>setTimeout ， setInterval</li>
-<li>文件操作</li>
-<li>其它宏任务</li>
-</ul>
-</li>
-<li>微任务（microtask）<ul>
-<li>Promise.then / .catch / .finally</li>
-<li>process.nextTick</li>
-<li>其他微任务</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><img src="https://i.loli.net/2021/08/16/jVra4y52ekdlnWY.png" alt="2"></p>
-</li>
-<li><p>宏任务和微任务的执行顺序</p>
-<ul>
-<li>每一个宏任务执行完之后，都会检查是否存在待执行的微任务</li>
-<li>如果有，则执行所有微任务之后，再继续执行下一个宏任务</li>
-</ul>
-<p><img src="https://i.loli.net/2021/08/16/HlJmX2RYIVahvO4.png" alt="3"></p>
-</li>
-<li><p>取银行办业务的场景</p>
-<ul>
-<li>小云和小腾去银行办业务，首先要取号后进行排队<ul>
-<li>宏任务队列</li>
-</ul>
-</li>
-<li>假设当前银行网点只有一个柜员，小云在办理业务时，小腾只能等待<ul>
-<li>单线程，宏任务按次序执行</li>
-</ul>
-</li>
-<li>小云办完存款业务后，柜员询问是否还想办理其他业务？<ul>
-<li>当前宏任务执行完毕，检查是否有微任务</li>
-</ul>
-</li>
-<li>小云告诉柜员 ： 想买理财产品<ul>
-<li>执行微任务，后续宏任务被推迟</li>
-</ul>
-</li>
-<li>小云离开柜台后，柜员开始为腾办理业务<ul>
-<li>所有微任务执行完毕，开始执行下一个宏任务</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>请分析以下代码输出的顺序</p>
-<ul>
-<li>156234789</li>
-</ul>
-<p><img src="https://i.loli.net/2021/08/16/7SzfjkdKJW6ytlA.png" alt="4"></p>
-</li>
-</ol>
-<h5 id="3-2-API接口案例-—-初始化项目"><a href="#3-2-API接口案例-—-初始化项目" class="headerlink" title="3-2  API接口案例 — 初始化项目"></a>3-2  API接口案例 — 初始化项目</h5><ol>
-<li><p>案例需求</p>
-<ul>
-<li>基于MySQL数据库 + Express 对外提供 <strong>用户列表</strong>的API接口服务</li>
-<li>用到的技术点 ：<ul>
-<li>第三方包 exxpress 和mysql2</li>
-<li>ES6 模块化</li>
-<li>Promise</li>
-<li>async / await</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>主要的实现步骤、</p>
-<ul>
-<li>搭建项目的基本结构</li>
-<li>创建基本的服务器</li>
-<li>创建 db 数据库操作模块</li>
-<li>创建 user_ctrl 业务模块</li>
-<li>创建user_router 路由模块</li>
-</ul>
-</li>
-<li><p>搭建项目的基本结构</p>
-<ul>
-<li>启用ES6 模块化支持<ul>
-<li>在package.json中声明<code>&quot;type&quot;:&quot;module&quot;</code></li>
-</ul>
-</li>
-<li>安装第三方依赖包<ul>
-<li>运行 <code>npm install express@4.17.1     mysql2@2.2.5</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>创建基本的服务器</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用ES6 的默认导入语法</span></span><br><span class="line"><span class="keyword">import</span> express <span class="keyword">from</span> <span class="string">&#x27;express&#x27;</span></span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line"></span><br><span class="line">app.listen(<span class="number">80</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;server running at http：//127.0.0.1&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h5 id="3-3-创建db数据库操作模块"><a href="#3-3-创建db数据库操作模块" class="headerlink" title="3-3 创建db数据库操作模块"></a>3-3 创建db数据库操作模块</h5><ol>
+<ol start="4">
 <li></li>
 </ol>
-<h5 id="3-4-创建并挂载路由模块（使用user-router路由模块）"><a href="#3-4-创建并挂载路由模块（使用user-router路由模块）" class="headerlink" title="3-4 创建并挂载路由模块（使用user_router路由模块）"></a>3-4 创建并挂载路由模块（使用user_router路由模块）</h5><ol>
-<li>有个小bug，等之后</li>
+<h4 id="1-4-新增input及表单属性"><a href="#1-4-新增input及表单属性" class="headerlink" title="1-4 新增input及表单属性"></a>1-4 新增input及表单属性</h4><ol>
+<li><img src="D:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/555.png" alt="555"></li>
 </ol>
-<h5 id="3-5-API接口案例-—-使用try-catch捕获异常错误"><a href="#3-5-API接口案例-—-使用try-catch捕获异常错误" class="headerlink" title="3-5  API接口案例 —- 使用try...catch捕获异常错误"></a>3-5  API接口案例 —- 使用<code>try...catch</code>捕获异常错误</h5><ol>
+<ul>
+<li>autofocus：像百度自动获得焦点</li>
+</ul>
+<h1 id="第二章-CSS３"><a href="#第二章-CSS３" class="headerlink" title="第二章 ＣＳＳ３"></a>第二章 ＣＳＳ３</h1><h4 id="2-1-选择器：-类选择器、属性选择器、伪类选择器的权重为10"><a href="#2-1-选择器：-类选择器、属性选择器、伪类选择器的权重为10" class="headerlink" title="2-1 选择器：(类选择器、属性选择器、伪类选择器的权重为10)"></a>2-1 选择器：(类选择器、属性选择器、伪类选择器的权重为10)</h4><blockquote>
+<p>快捷键： input：text</p>
+</blockquote>
+<ol>
+<li><p>属性选择器</p>
+<ul>
+<li>选择具有att属性的E元素： E[att]<ul>
+<li>例子: button[disabled] { cursor: pointer;}</li>
+</ul>
+</li>
+<li>选择具有att属性且属性值等于val的E元素： E[att=”val”]<ul>
+<li>input[type]   |||  input[type=”text”]</li>
+</ul>
+</li>
+<li>匹配具有att属性、且值以val开头的E元素: E[att^=”val”]<ul>
+<li>bddb</li>
+</ul>
+</li>
+<li>匹配具有att属性，且值以val结尾的E元素： E[att$=”val”]<ul>
+<li>ndd</li>
+</ul>
+</li>
+<li><h2 id="匹配具有att属性、且值中含有val的E元素-E-att-”val”"><a href="#匹配具有att属性、且值中含有val的E元素-E-att-”val”" class="headerlink" title="匹配具有att属性、且值中含有val的E元素: E[att*=”val”]"></a>匹配具有att属性、且值中含有val的E元素: E[att*=”val”]</h2></li>
+</ul>
+</li>
+<li><p>结构伪类选择器</p>
+<p><strong>（一）</strong></p>
+<ul>
+<li>匹配父元素中的第一个子元素E     <code>E:first-child</code></li>
+<li>匹配父元素中的最后一个E元素  <code>E: last-child</code></li>
+<li>匹配父元素中的第n个子元素E  <code>E:nth-child(n)</code><ul>
+<li>n可以是数字、关键字和公式（even偶数，odd奇数）</li>
+</ul>
+</li>
+</ul>
+<p><strong>（二）</strong></p>
+<ul>
+<li>指定类型E中放入第一个  <code>E: first-of-type </code></li>
+<li>指定类型E的最后一个   <code>E: last-of-type(n)</code></li>
+<li>指定类型E的第ｎ个　　　<code>E:nth-of-type(n)</code></li>
+</ul>
+</li>
+<li><p>伪元素选择器（<strong>和标签选择器一样，权重为1</strong>）【在父盒子的前面或者后面写】</p>
+<p><strong>会创建一个行内元素，必须有content元素，在dom中找不到该节点</strong></p>
+<ul>
+<li><p>：：before在元素前面插入内容</p>
+</li>
+<li><p>：：after在元素后面插入内容</p>
+</li>
+<li><p>例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p::after&#123;</span><br><span class="line">	content: &#x27;\ea50&#x27;;</span><br><span class="line">	position: absolute;</span><br><span class="line">	top: 10px;</span><br><span class="line">	right: 10px;</span><br><span class="line">	font-family: &#x27;icomoon&#x27;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h4 id="2-2-2D转换–概念-移动"><a href="#2-2-2D转换–概念-移动" class="headerlink" title="2-2 2D转换–概念+移动"></a>2-2 2D转换–概念+移动</h4><ol>
+<li><p>转换（transform）可以实现元素的移动、旋转、缩放等效果转换（===变形）</p>
+<p><strong>x轴朝右为正，y轴朝下为正</strong></p>
+<ul>
+<li>移动： translate</li>
+<li>旋转： rotate</li>
+<li>缩放： scale</li>
+</ul>
+</li>
+<li><p><strong>移动</strong></p>
+<p>移动盒子的位置：　定位、盒子的外边距、２ｄ转换移动</p>
+<ul>
+<li><p>在x,y轴上的移动 ： <code>tramsform: translate(x,y)；</code></p>
+<ul>
+<li><pre><code>transform: translate(100px,0);
+//50%：相对于自身的一半
+transform: translate(50%,50%);
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>注意：</p>
+<ul>
+<li>transform不会影响其他盒子</li>
+<li>对行内元素没有效果</li>
+</ul>
+</li>
+</ul>
+<p><strong>让一个盒子垂直水平居中:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">p &#123;</span><br><span class="line">	position: absolute;</span><br><span class="line">	top: 50%;</span><br><span class="line">	left: 50%;</span><br><span class="line">	width: 100px;</span><br><span class="line">	height: 100px;</span><br><span class="line">	/*margin-top: -50px;</span><br><span class="line">	margin-left: -50px;*/</span><br><span class="line">	transform: translate(-50%,-50%);</span><br><span class="line">	//transform: tranlateX(50%);</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="2-3-2D转化–旋转"><a href="#2-3-2D转化–旋转" class="headerlink" title="2-3 2D转化–旋转"></a>2-3 2D转化–旋转</h4><ol>
+<li><p><strong>旋转：rotate</strong></p>
+<ul>
+<li><p><code>transform： ratate(度数)</code></p>
+</li>
+<li><p>角度为正时，顺时针；负时，为逆时针</p>
+</li>
+<li><p>默认旋转的中心点是元素的中心点</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">img &#123;</span><br><span class="line">	width: 150px;</span><br><span class="line">	border-radius: 50%;</span><br><span class="line">	border: 5PX SOLID PINK;</span><br><span class="line">	transition： all o.3s;</span><br><span class="line">&#125;</span><br><span class="line">img: hover &#123;</span><br><span class="line">	transform : rotate(360deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>案例：2D旋转rotate（三角形）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	position: relative;</span><br><span class="line">	width: 300px;</span><br><span class="line">	height: 100px;</span><br><span class="line">	border: 1px solid #000;</span><br><span class="line">&#125;</span><br><span class="line">div::after&#123;</span><br><span class="line">	content: &quot;&quot;,</span><br><span class="line">	positioN: absolute;</span><br><span class="line">	top: 8px;</span><br><span class="line">	right: 10px;</span><br><span class="line">	border-right: 1px solid #000;</span><br><span class="line">	border-bottom: 1px solid #000;</span><br><span class="line">	transform: rotate(45deg);</span><br><span class="line">	transition: all 0.2s;</span><br><span class="line">&#125;</span><br><span class="line">div:hover::after&#123;</span><br><span class="line">	transform: rotate(225deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ol start="3">
+<li><p>2D设置旋转中心<strong>transform-origin</strong>：</p>
+<ul>
+<li>语法： <code>transform-origin: x y;</code><ul>
+<li>x，y中间用空格隔开</li>
+</ul>
+</li>
+<li>注意：<ul>
+<li>x，y默认旋转的中心点是元素的中心点（50% 50%）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>例子：</p>
+<ul>
 <li></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">	width: 200px;</span><br><span class="line">	height: 200px;</span><br><span class="line">	b-color: pink;</span><br><span class="line">	margin: 100px auto;</span><br><span class="line">	transition: all 1s;</span><br><span class="line">	/*1. 可以跟方位名词*/</span><br><span class="line">	/*transform-origin: left bottom;*/</span><br><span class="line">	/*2. 默认的是50% 50%，等价于 center center*/</span><br><span class="line">	/*3. 可以是px像素*/</span><br><span class="line">	/*transform-origin: 50px 50px;*/</span><br><span class="line">&#125;</span><br><span class="line">div:hover &#123;</span><br><span class="line">	transform: rotate(360px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	overflow: hidden;</span><br><span class="line">	width: 200px;</span><br><span class="line">	height: 200px;</span><br><span class="line">	border: 1px solid pink;</span><br><span class="line">	margin: 10px;</span><br><span class="line">	float: left;</span><br><span class="line">&#125;</span><br><span class="line">div::before&#123;</span><br><span class="line">	content: ”黑马“;</span><br><span class="line">	diaplay: block;</span><br><span class="line">	width: 100%;</span><br><span class="line">	height: 100%;</span><br><span class="line">	b-color: hotpink;</span><br><span class="line">	transform: rotate(180deg);</span><br><span class="line">	transform-qrigin: left bottom;</span><br><span class="line">	transition： all .4s;</span><br><span class="line">&#125;</span><br><span class="line">div:hover::before &#123;</span><br><span class="line">	transform: rotate(0deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果图： <img src="C:/Users/Hannah/AppData/Roaming/Typora/typora-user-images/image-20210616230214055.png" alt="image-20210616230214055"></p>
+</li>
+</ol>
+<h4 id="2-4-2D转化–缩放scale"><a href="#2-4-2D转化–缩放scale" class="headerlink" title="2-4 2D转化–缩放scale"></a>2-4 2D转化–缩放scale</h4><ol>
+<li>语法： <code>transform: scale(x,y);</code><ul>
+<li>x，y为宽高的倍数，不加单位</li>
+<li>等比例放缩： <code>transform: scale(3);</code></li>
+<li><strong>不影响其他盒子，而且可以设置缩放的中心点<code>transform-origin: left bottom;</code></strong></li>
+</ul>
+</li>
+<li>分页按钮案例：（**快捷键：ul&gt;li{$}*7**）</li>
+<li>2D转化综合写法：<ul>
+<li>同时使用多个转化：</li>
+<li>格式： <code>transform : translate() rotate() scale()...</code>等</li>
+<li>其顺序会影响转化的效果，先旋转会改变坐标轴的方向</li>
+<li>同时有位移和其他属性时，记得要将位移放在最前</li>
+</ul>
+</li>
+</ol>
+<h4 id="2-5-动画"><a href="#2-5-动画" class="headerlink" title="2-5 动画"></a>2-5 动画</h4><ol>
+<li><p>相较于过渡，动画可以实现更多变化，更多控制，连续自动播放等效果</p>
+</li>
+<li><p>动画的基本使用：</p>
+<ul>
+<li><p>先定义动画</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@keyframs(规定某项CSS样式，就能创建由) move &#123;</span><br><span class="line">	/*开始状态*/</span><br><span class="line">	0%/from&#123; transform: translate(0px,0px); &#125;</span><br><span class="line">	</span><br><span class="line">	25%&#123; transform: translateX(1000px); &#125;</span><br><span class="line">	</span><br><span class="line">	50%&#123; transform: translate(1000px,500px); &#125;</span><br><span class="line">	</span><br><span class="line">	75%&#123; transform: translate(0,500px); &#125;</span><br><span class="line">	/*结束状态*/</span><br><span class="line">	100%/to &#123; transform: translate(0,0); &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>在调用动画</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	width: 200px;</span><br><span class="line">	height: 200px;</span><br><span class="line">	animation-name: move;   /*动画名称*/ </span><br><span class="line">	animation-duration: 2s;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>动画的基本属性</p>
+<ul>
+<li><p>@keyframs： 规定某项CSS样式，就能创建由当前样式逐渐改为新样式的动画效果</p>
+</li>
+<li><p><code>animation-timing-function:</code>规定动画的速度曲线，默认为”ease“</p>
+<ul>
+<li>默认是ease：低速开始，加速在结束前变慢</li>
+<li>linear：匀速</li>
+<li>ease-in: 低速开始</li>
+<li>ease-out： 低速结束</li>
+<li>ease-in-out： 低速开始和结束</li>
+<li>steps(): 指定了时间函数中的间隔数量</li>
+</ul>
+</li>
+<li><p><code>animation-delay:</code>规定动画何时开始，默认为0</p>
+</li>
+<li><p><code>animation-iteration-count</code>:规定动画被播放的次数，默认为1，还有infinite</p>
+</li>
+<li><p><code>animation-direction:</code>规定动画是否在下一周期逆向播放，默认是”normal“，alternate逆播放</p>
+</li>
+<li><p><code>animation-play-state</code>：规定动画是否正在运行或暂停，默认是”running“,还有”paused”</p>
+</li>
+<li><p><code>animation-fill-mode</code>:规定动画结束后状态，保持forwards，回到起始backwards<img src="D:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/777.png" alt="777"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div: hover&#123;</span><br><span class="line">	animation-play-mode: paused;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>动画简写属性：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">animation: 动画名称 持续时间 运动曲线 何时开始 播放次数 是否反方向 动画起始或者结束的状态</span><br><span class="line">animation: **name** **duration** timing-function delay iteration-count direction fill-mode;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>例子：<code>animation: myfirst 5s linear 2s infinite alternate;</code></li>
+</ul>
+</li>
+<li><p> 热点图案例（城市的波纹图）：</p>
+</li>
+</ol>
+   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">.dotted&#123;</span><br><span class="line">	width: 8px;</span><br><span class="line">	height: 8px;</span><br><span class="line">	background-color: #09f;</span><br><span class="line">	border-radius: 50%;</span><br><span class="line">&#125;</span><br><span class="line">.city(10) div(1)[class^=&quot;pulse&quot;](10)&#123;</span><br><span class="line">	/*保证我们小波纹在父盒子里面水平垂直居中，放大之后就会中心向四周发散*/</span><br><span class="line">	position: absolute;</span><br><span class="line">	top: 50%;</span><br><span class="line">	left: 50%;</span><br><span class="line">	transform: translate(-50%,-50%);</span><br><span class="line">	width: 8px;</span><br><span class="line">	height: 8px;</span><br><span class="line">	box-shadow: 0 0 12px #009dfd;</span><br><span class="line">	border-radius: 50%;</span><br><span class="line">	animation: pulse 1.2s linear(匀速) infinite;</span><br><span class="line">&#125;</span><br><span class="line">.city div.pulse2(10)&#123;</span><br><span class="line">	animation-delay: 0.4s;</span><br><span class="line">&#125;</span><br><span class="line">.city div.pulse3&#123;</span><br><span class="line">	animation-delay: 0.4s;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes pulse &#123;</span><br><span class="line">	0%&#123;&#125;</span><br><span class="line">	70%&#123;</span><br><span class="line">        width: 40px;</span><br><span class="line">        height: 40px;</span><br><span class="line">        opacity: 1;</span><br><span class="line">	&#125;</span><br><span class="line">	100%&#123;</span><br><span class="line">		width: 70px;</span><br><span class="line">		height: 70px;</span><br><span class="line">		opacity: 0;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;map&quot;&gt;</span><br><span class="line">	&lt;div class=&quot;city&quot;&gt;</span><br><span class="line">		&lt;div class=&quot;dotted&quot;&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div class=&quot;pulse1&quot;&gt;&lt;/div&gt;   //3个波纹</span><br><span class="line">		&lt;div class=&quot;pulse2&quot;&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div class=&quot;pulse3&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li><p>案例： 打字机效果：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	overflow: hidden;</span><br><span class="line">	font-size: 20px;</span><br><span class="line">	width: 0;</span><br><span class="line">	height: 30px;</span><br><span class="line">	b-c: pink;</span><br><span class="line">	white-space: nowrap;   //文字强制一行显示</span><br><span class="line">	animation: w 4s steps(10) forwards;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes w&#123;</span><br><span class="line">	0%&#123;</span><br><span class="line">		width: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	100%&#123;</span><br><span class="line">		width: 200px;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;div&gt;世纪佳缘我们这里等你&lt;/div&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>案例： 奔跑的小熊案例(跑到最中央之后，停下不停奔跑)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	position: absolute;</span><br><span class="line">	width: 200px;</span><br><span class="line">	height: 100px;</span><br><span class="line">	background: url(media/bear.png) no-repeat;</span><br><span class="line">	animation: bear 1s steps(8) infinite，</span><br><span class="line">				move 1s forwards;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@keyframes bear &#123;</span><br><span class="line">	0% &#123;</span><br><span class="line">		background-position: 0 0;</span><br><span class="line">	&#125;</span><br><span class="line">	100%&#123;</span><br><span class="line">		backgtound-positionL -16oopx 0;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes move &#123;   //跑到舞台中央</span><br><span class="line">	0% &#123;</span><br><span class="line">		left: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	100% &#123;</span><br><span class="line">		left: 50%;</span><br><span class="line">		margin-left: -100px;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="2-6-3D转换"><a href="#2-6-3D转换" class="headerlink" title="2-6 3D转换"></a>2-6 3D转换</h4><ol>
+<li><p><img src="D:/Front-end/md%E7%AC%94%E8%AE%B0/html+css+%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3+ps%E5%BF%AB%E6%8D%B7%E9%94%AE/21%E5%B9%B4%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/888.png" alt="888"></p>
+</li>
+<li><p>3D转换： 3D位移和3D旋转</p>
+<ul>
+<li><p>translateZ沿着Z轴移动</p>
+</li>
+<li><p>```<br>tranform: translate3d(x,y,z);     //x,y,z不能省略，如果没有就写0</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   - 透视： perspective</span><br><span class="line"></span><br><span class="line">     - 也称为视距： 人的眼睛到屏幕的距离</span><br><span class="line">     - 透视的单位是像素，透视写在被观察元素的父盒子里面（透视越大，相当于眼睛距离盒子越近，盒子越大）</span><br><span class="line"></span><br><span class="line">3. 3D旋转【**左手准则**】</span><br><span class="line"></span><br><span class="line">   - 可以让元素在三维平面内沿着x轴，y轴或自定义</span><br><span class="line"></span><br><span class="line">   - 语法：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>transform: rotateX(45deg);   //沿着x轴正方向旋转45deg<br>transform: ratateY(45deg);     //沿着y轴正方向旋转45deg<br>transform: ratateZ(45deg);    //沿着Z轴旋转45deg<br>transform: rotate3d(x,y,z,deg);    //沿着自定义旋转deg</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 例子：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">     </span><br><span class="line"></span><br><span class="line">4. 案例： 小猪佩奇：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>body{<br>  perspective: 500px;<br>}<br>img{<br>  display: block;<br>  margin: 100px auto;<br>  transition: all is;<br>}<br>img{<br>  transform: rotateY(180deg);<br>  transform: rotate3d(1,0,0,45deg);<br>  transform: rotate3d(1,1,0,45deg);    //沿着对角线旋转45deg<br>}</p>
+<body>
+  <img src="media/pig.jpg" alt="">
+</body>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">5. `transfrom-style`:（**代码写给父级，但是影响的是子盒子**）</span><br><span class="line"></span><br><span class="line">   - 控制子元素是否开启三维立体空间</span><br><span class="line">   - （默认）`transform-style: flat`子元素不开启3d立体空间</span><br><span class="line">   - `transform-style: preserve-3d;`子元素开启立体空间</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+.box{
+  perspective: 200px;
+}
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  transform-style: preserve-3d;
+}
+.box div{
+  transform: rotateY(60deg);
+}
+.box div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+.box div:last-child{
+  background-color: purple;
+}</li>
+</ul>
+<div class="box">
+    <div></div>
+    <div></div>
+</div>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">6. 案例： 两面翻转盒子案例</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+//box指定大小，切记要添加3d呈现；back盒子要沿着Y轴翻转180度；最后鼠标经过box沿着旋转180deg
+.box{
+    position: relative;
+    wieth: 300px;
+    height: 300px;
+    margin: 100px auto;
+    transition: all .4s;
+    /*让背面的紫色盒子保留立体空间，给父级添加的*/
+    transform-stylr: preserve-3d;
+}
+.box:hover {
+    transform: rotateY(180deg);
+}
+.front,.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+}
+.front {
+    background-color: pink;
+    z-index: 1;
+}
+.back {
+    background-color: purple;
+    transform: rotateY(180deg);
+}
+
+
+<p>/<em>搭建HTML,box父盒子俩民包含前后两个子盒子；</em>/</p>
+<div class=“box”>
+    <div class="front">黑马程序员</div>
+    <div class="back">pink老师等你</div>    
+</div>
+```</li>
+<li><p>3D导航栏： </p>
+</li>
 </ol>
 
       
@@ -688,7 +608,7 @@ console.log(&#39;C&#39;);
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://hannah-bingo.github.io/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://hannah-bingo.github.io/2021/08/19/A_css%E5%B0%B1%E4%B8%9A%E7%8F%AD/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -702,18 +622,18 @@ console.log(&#39;C&#39;);
   
 <nav id="article-nav">
   
-    <a href="/2021/08/20/D_git/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/08/19/A_%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          git基础
+          移动web开发流式布局
         
       </div>
     </a>
   
   
-    <a href="/2021/08/20/A_css/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">css</div>
+    <a href="/2021/08/19/A_CSS%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS类命名规范</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -740,7 +660,7 @@ console.log(&#39;C&#39;);
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-ES6%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B8%8E%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">第一章 ES6模块化与异步编程高级用法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-1-%E5%9B%9E%E9%A1%BE%EF%BC%8B%E6%A8%A1%E5%9D%97%E5%8C%96"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1-1  回顾＋模块化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-2-ES6%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">1-2 ES6模块化规范</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-3-%E5%AF%BC%E5%87%BA%E4%B8%8E%E9%BB%98%E8%AE%A4%E5%AF%BC%E5%85%A5"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">1-3 导出与默认导入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-%E6%8C%89%E9%9C%80%E5%AF%BC%E5%85%A5%E4%B8%8E%E6%8C%89%E9%9C%80%E5%AF%BC%E5%87%BA"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">1-4 按需导入与按需导出</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-5-%E7%9B%B4%E6%8E%A5%E5%AF%BC%E5%85%A5%E5%B9%B6%E6%89%A7%E8%A1%8C%E6%A8%A1%E5%9D%97%E4%B8%AD%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">1-5 直接导入并执行模块中的代码</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-Promise"><span class="toc-number">2.</span> <span class="toc-text">第二章 Promise</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-%E5%9B%9E%E8%B0%83%E5%9C%B0%E7%8B%B1%E5%8F%8APromise%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">2-1 回调地狱及Promise的作用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-Promis%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">2.0.0.2.</span> <span class="toc-text">2-2 Promis的基本概念</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-3-%E5%9F%BA%E4%BA%8E%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9-amp-then%EF%BC%8Dfs%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">2.0.0.3.</span> <span class="toc-text">2-3 基于回调函数按顺序读取文件内容&amp;ｔｈｅｎ－ｆｓ的基本使用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-4-then-%E6%96%B9%E6%B3%95%E4%BB%A5%E5%8F%8A%E5%9F%BA%E4%BA%8EPromise-%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9-amp-%E9%80%9A%E8%BF%87catch%E6%96%B9%E6%B3%95%E6%8D%95%E8%8E%B7%E9%94%99%E8%AF%AF"><span class="toc-number">2.0.0.4.</span> <span class="toc-text">2-4 .then()方法以及基于Promise 按顺序读取文件的内容 &amp;通过catch方法捕获错误</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-5-Promise-%E2%80%94-Promise-all-%E4%BB%A5%E5%8F%8APromise-race-%E6%96%B9%E6%B3%95"><span class="toc-number">2.0.0.5.</span> <span class="toc-text">2-5 Promise —- Promise.all()以及Promise.race()方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-6-%E5%9F%BA%E4%BA%8EPromise%E5%B0%81%E8%A3%85%E8%AF%BB%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">2.0.0.6.</span> <span class="toc-text">2-6 基于Promise封装读文件的方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-7-async-await"><span class="toc-number">2.0.0.7.</span> <span class="toc-text">2-7 async &#x2F;await</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-8-EventLoop"><span class="toc-number">2.0.0.8.</span> <span class="toc-text">2-8 EventLoop</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%AE%8F%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%BE%AE%E4%BB%BB%E5%8A%A1-amp-API"><span class="toc-number">3.</span> <span class="toc-text">第三章  宏任务和微任务 &amp; API</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-1-%E5%AE%8F%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%BE%AE%E4%BB%BB%E5%8A%A1"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">3-1 宏任务和微任务</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-API%E6%8E%A5%E5%8F%A3%E6%A1%88%E4%BE%8B-%E2%80%94-%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B9%E7%9B%AE"><span class="toc-number">3.0.0.2.</span> <span class="toc-text">3-2  API接口案例 — 初始化项目</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-3-%E5%88%9B%E5%BB%BAdb%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E6%A8%A1%E5%9D%97"><span class="toc-number">3.0.0.3.</span> <span class="toc-text">3-3 创建db数据库操作模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-4-%E5%88%9B%E5%BB%BA%E5%B9%B6%E6%8C%82%E8%BD%BD%E8%B7%AF%E7%94%B1%E6%A8%A1%E5%9D%97%EF%BC%88%E4%BD%BF%E7%94%A8user-router%E8%B7%AF%E7%94%B1%E6%A8%A1%E5%9D%97%EF%BC%89"><span class="toc-number">3.0.0.4.</span> <span class="toc-text">3-4 创建并挂载路由模块（使用user_router路由模块）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-5-API%E6%8E%A5%E5%8F%A3%E6%A1%88%E4%BE%8B-%E2%80%94-%E4%BD%BF%E7%94%A8try-catch%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8%E9%94%99%E8%AF%AF"><span class="toc-number">3.0.0.5.</span> <span class="toc-text">3-5  API接口案例 —- 使用try...catch捕获异常错误</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-number">1.</span> <span class="toc-text">第一章</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-VScode%E5%92%8CHTML5"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1-1  VScode和HTML5</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-HTML5%E6%96%B0%E5%A2%9E%E8%AF%AD%E4%B9%89%E6%A0%87%E7%AD%BE"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">1-2 HTML5新增语义标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-HTML5%E6%96%B0%E5%A2%9E%E5%A4%9A%E5%AA%92%E4%BD%93%E6%A0%87%E7%AD%BE"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">1-3 HTML5新增多媒体标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-%E6%96%B0%E5%A2%9Einput%E5%8F%8A%E8%A1%A8%E5%8D%95%E5%B1%9E%E6%80%A7"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">1-4 新增input及表单属性</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-CSS%EF%BC%93"><span class="toc-number">2.</span> <span class="toc-text">第二章 ＣＳＳ３</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A-%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E3%80%81%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8%E3%80%81%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E6%9D%83%E9%87%8D%E4%B8%BA10"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">2-1 选择器：(类选择器、属性选择器、伪类选择器的权重为10)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D%E5%85%B7%E6%9C%89att%E5%B1%9E%E6%80%A7%E3%80%81%E4%B8%94%E5%80%BC%E4%B8%AD%E5%90%AB%E6%9C%89val%E7%9A%84E%E5%85%83%E7%B4%A0-E-att-%E2%80%9Dval%E2%80%9D"><span class="toc-number">2.1.</span> <span class="toc-text">匹配具有att属性、且值中含有val的E元素: E[att*&#x3D;”val”]</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2D%E8%BD%AC%E6%8D%A2%E2%80%93%E6%A6%82%E5%BF%B5-%E7%A7%BB%E5%8A%A8"><span class="toc-number">2.1.0.1.</span> <span class="toc-text">2-2 2D转换–概念+移动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-2D%E8%BD%AC%E5%8C%96%E2%80%93%E6%97%8B%E8%BD%AC"><span class="toc-number">2.1.0.2.</span> <span class="toc-text">2-3 2D转化–旋转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-2D%E8%BD%AC%E5%8C%96%E2%80%93%E7%BC%A9%E6%94%BEscale"><span class="toc-number">2.1.0.3.</span> <span class="toc-text">2-4 2D转化–缩放scale</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-%E5%8A%A8%E7%94%BB"><span class="toc-number">2.1.0.4.</span> <span class="toc-text">2-5 动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-3D%E8%BD%AC%E6%8D%A2"><span class="toc-number">2.1.0.5.</span> <span class="toc-text">2-6 3D转换</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -754,7 +674,7 @@ console.log(&#39;C&#39;);
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="E_ES6模块化+Promise+EventLoop+API" data-title="ES6模块化+Promise+EventLoop+API" data-url="http://hannah-bingo.github.io/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/"></div>
+	<div class="ds-thread" data-thread-key="A_css就业班" data-title="CSS就业班" data-url="http://hannah-bingo.github.io/2021/08/19/A_css%E5%B0%B1%E4%B8%9A%E7%8F%AD/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -777,8 +697,8 @@ console.log(&#39;C&#39;);
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://hannah-bingo.github.io/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/", 
-    sourceId: "E_ES6模块化+Promise+EventLoop+API",
+    url: "http://hannah-bingo.github.io/2021/08/19/A_css%E5%B0%B1%E4%B8%9A%E7%8F%AD/", 
+    sourceId: "A_css就业班",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -787,7 +707,7 @@ console.log(&#39;C&#39;);
   
 
   
-  <div id="SOHUCS" sid="E_ES6模块化+Promise+EventLoop+API" ></div> 
+  <div id="SOHUCS" sid="A_css就业班" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
