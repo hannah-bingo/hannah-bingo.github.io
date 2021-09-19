@@ -6,19 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://hannah-bingo.github.io">
-  <title>Hello World | 翼遥bingo的个人博客</title>
+  <title>ES6模块化+Promise+EventLoop+API | 翼遥bingo的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Qu">
+  <meta name="description" content="使用ES6的模块化语法 使用Promise 解决回调地狱的问题 如何使用async&#x2F;await简化Promise的调用 说出Event Loop 说出宏任务与微任务的执行顺序   第一章 ES6模块化与异步编程高级用法1-1  回顾＋模块化 回顾： node.js如何实行模块化  node.js 遵循了CommonJS的模块化规范：（1）导入其他模块使用require()方法 模块对外共">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://hannah-bingo.github.io/2021/08/28/hello-world/index.html">
+<meta property="og:title" content="ES6模块化+Promise+EventLoop+API">
+<meta property="og:url" content="http://hannah-bingo.github.io/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/index.html">
 <meta property="og:site_name" content="翼遥bingo的个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Qu">
+<meta property="og:description" content="使用ES6的模块化语法 使用Promise 解决回调地狱的问题 如何使用async&#x2F;await简化Promise的调用 说出Event Loop 说出宏任务与微任务的执行顺序   第一章 ES6模块化与异步编程高级用法1-1  回顾＋模块化 回顾： node.js如何实行模块化  node.js 遵循了CommonJS的模块化规范：（1）导入其他模块使用require()方法 模块对外共">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-08-28T04:10:19.375Z">
-<meta property="article:modified_time" content="2021-09-19T08:38:20.813Z">
+<meta property="og:image" content="https://i.loli.net/2021/08/16/74uyKH3VUrqEQeD.png">
+<meta property="og:image" content="https://i.loli.net/2021/08/16/jVra4y52ekdlnWY.png">
+<meta property="og:image" content="https://i.loli.net/2021/08/16/HlJmX2RYIVahvO4.png">
+<meta property="og:image" content="https://i.loli.net/2021/08/16/7SzfjkdKJW6ytlA.png">
+<meta property="article:published_time" content="2021-08-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-09-19T08:41:09.627Z">
 <meta property="article:author" content="Hannah">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/08/16/74uyKH3VUrqEQeD.png">
   
     <link rel="alternative" href="/atom.xml" title="翼遥bingo的个人博客" type="application/atom+xml">
   
@@ -158,20 +163,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-E_ES6模块化+Promise+EventLoop+API" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      ES6模块化+Promise+EventLoop+API
     </h1>
   
 
         
-        <a href="/2021/08/28/hello-world/" class="archive-article-date">
-  	<time datetime="2021-08-28T04:10:19.375Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-28</time>
+        <a href="/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/" class="archive-article-date">
+  	<time datetime="2021-08-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-20</time>
 </a>
         
       </header>
@@ -180,20 +185,416 @@
       
          <span id="more"></span>
 
-<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>使用ES6的模块化语法</li>
+<li>使用Promise 解决回调地狱的问题</li>
+<li>如何使用async/await简化Promise的调用</li>
+<li>说出Event Loop</li>
+<li>说出宏任务与微任务的执行顺序</li>
+</ul>
+</blockquote>
+<h2 id="第一章-ES6模块化与异步编程高级用法"><a href="#第一章-ES6模块化与异步编程高级用法" class="headerlink" title="第一章 ES6模块化与异步编程高级用法"></a>第一章 ES6模块化与异步编程高级用法</h2><h5 id="1-1-回顾＋模块化"><a href="#1-1-回顾＋模块化" class="headerlink" title="1-1  回顾＋模块化"></a>1-1  回顾＋模块化</h5><ol>
+<li><p>回顾： node.js如何实行模块化</p>
+<ul>
+<li>node.js 遵循了CommonJS的模块化规范：（1）导入其他模块使用<code>require()</code>方法</li>
+<li>模块对外共享成员使用<code>module.exports</code>对象</li>
+</ul>
+</li>
+<li><p>模块化的好处 ：</p>
+<ul>
+<li>都遵循相同的代码规范写代码，降低了沟通的成本，极大方便了各个模块之间的相互调用</li>
+</ul>
+</li>
+<li><p>前端模块化规范的分类：</p>
+<ul>
+<li>在ES6规范化规范诞生之前，JavaScript社区已经尝试并提出AMD、CMD、CommonJS等模块化规范</li>
+<li>这些由社区提出的模块化标准，存在一定的局限性和差异性，并不是所有浏览器与服务器通用的模块化标准。<ul>
+<li>例如: AMD和CMD适用于浏览器端的JavaScript</li>
+<li>CommonJS使用于服务器端的JavaScript模块化</li>
+</ul>
+</li>
+<li>太多的模块化规范给开发者增加了学习的难度金额开发的成本，因此，大一统的ES６模块化规范诞生了！<h5 id="1-2-ES6模块化规范"><a href="#1-2-ES6模块化规范" class="headerlink" title="1-2 ES6模块化规范"></a>1-2 ES6模块化规范</h5></li>
+</ul>
+</li>
+<li><p>ES6 模块化规范的定义：</p>
+<ul>
+<li>ES6模块化规范是浏览器与服务器端通用的模块化开发规范。它的出现极大降低了前端开发者的模块化学习成本</li>
+</ul>
+</li>
+<li><p>ES6模块规范定义：</p>
+<ul>
+<li>每个JS文件都是一个独立的模块</li>
+<li>导入其他模块成员使用 <code>import</code>关键字</li>
+<li>向外共享模块成员使用<code>export</code>关键字</li>
+</ul>
+</li>
+<li><p>在node.js中默认仅支持CommonJS模块化规范，若想基于node.js体验与学习ES6的模块化语法，可以按照如下两个步骤进行配置 ：</p>
+<ul>
+<li>确保安装v14.15.1或更高版本的node.js</li>
+<li>在package.json 的根节点中添加“type”：“module”节点</li>
+</ul>
+</li>
+<li><ul>
+<li><p><code>ctrl + ~</code>——-&gt; npm init -y  ： 快速初始化一个包管理配置文件（package.json）</p>
+<ul>
+<li>添加<code>&quot;type&quot;： “module&quot;，</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="1-3-导出与默认导入"><a href="#1-3-导出与默认导入" class="headerlink" title="1-3 导出与默认导入"></a>1-3 导出与默认导入</h5><ol>
+<li>默认导出 ：<code>export default</code>默认导出的成员<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> n1 = <span class="number">10</span>;    <span class="comment">//定义模块私有成员 n1</span></span><br><span class="line"><span class="keyword">let</span> n2 = <span class="number">20</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">show</span>(<span class="params"></span>)</span>&#123;&#125;    <span class="comment">//定义模块私有方法 show</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span>	<span class="keyword">default</span> &#123;</span><br><span class="line">    n1,show</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>默认导入的语法 ： <code>import 接受名称 form &#39;模块块标识符&#39;;</code><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> m1 <span class="keyword">from</span> <span class="string">&#x27;./默认导入.js&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(m1);	<span class="comment">//&#123; n1: 10, show: [Function: show] &#125;</span></span><br></pre></td></tr></table></figure></li>
+<li>默认导出与默认导入的注意事项 </li>
+</ol>
+<ul>
+<li>只能使用唯一的默认导出<code>export</code></li>
+<li>默认导入时的接收名称可以是任意名称，只要合法的成员名称即可;</li>
+</ul>
+<h5 id="1-4-按需导入与按需导出"><a href="#1-4-按需导入与按需导出" class="headerlink" title="1-4 按需导入与按需导出"></a>1-4 按需导入与按需导出</h5><ol>
+<li><p>按需导出 ：<code>export 按需导出的成员；</code> </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> s1 = <span class="string">&#x27;aaa&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> s2 = <span class="string">&#x27;ccc&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">say</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>按需导入 ： </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;s1，s2,say&#125; <span class="keyword">from</span> <span class="string">&#x27;模块标识符&#x27;</span></span><br><span class="line"></span><br><span class="line">log(s1);  <span class="comment">//打印输出 aaa</span></span><br><span class="line">log(say);	<span class="comment">//打印输出 [Function ： say]</span></span><br></pre></td></tr></table></figure></li>
+<li><p>注意事项 ： </p>
+<ul>
+<li><p>每个模块中可以<strong>多次</strong>按需导出</p>
+</li>
+<li><p>按需<strong>导入的成员名称</strong> 必须和<strong>按需导入的名称</strong>保持一致</p>
+</li>
+<li><p>按需导入时，可以使用<strong>as关键字</strong>进行重命名  </p>
+<ul>
+<li> <code>import&#123;s2 as atr2&#125; from &#39;&#39;</code></li>
+<li>log(s2);</li>
+</ul>
+</li>
+<li><p>按需导入可以和默认导入一起使用(默认导入的不需要写在花括号中)</p>
+<ul>
+<li><p>导入 ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> info, &#123; s1, say &#125; <span class="keyword">from</span> <span class="string">&#x27;./02.按需导出.js&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(s1)</span><br><span class="line"><span class="built_in">console</span>.log(say)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(info);</span><br></pre></td></tr></table></figure></li>
+<li><p>导出</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> s1 = <span class="string">&#x27;aaa&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> s2 = <span class="string">&#x27;ccc&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">say</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123; <span class="comment">//默认导出</span></span><br><span class="line">    <span class="attr">a</span>: <span class="number">20</span> <span class="comment">//必须赋值才能导出</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="1-5-直接导入并执行模块中的代码"><a href="#1-5-直接导入并执行模块中的代码" class="headerlink" title="1-5 直接导入并执行模块中的代码"></a>1-5 直接导入并执行模块中的代码</h5><ol>
+<li><p><strong>只是想单纯执行某个模块中的代码</strong>，并不需要得到模块中向外共享的成员。可以直接导入并执行模块代码</p>
+</li>
+<li><p>示例代码 ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 当前文件模块为 03</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i =<span class="number">0</span>; i &lt; <span class="number">3</span>; i++)&#123;</span><br><span class="line">    log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">----------------------------------</span><br><span class="line"><span class="comment">//直接导入并执行模块代码，不需要得到模块向外共享的成员</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;03&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">-----------结果-----</span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="第二章-Promise"><a href="#第二章-Promise" class="headerlink" title="第二章 Promise"></a>第二章 Promise</h2><h5 id="2-1-回调地狱及Promise的作用"><a href="#2-1-回调地狱及Promise的作用" class="headerlink" title="2-1 回调地狱及Promise的作用"></a>2-1 回调地狱及Promise的作用</h5><ol>
+<li><p>多层回调函数的相互嵌套，就形成了<strong>回调地狱</strong></p>
+<ul>
+<li>代码耦合性太强，如果想要更改顺序，牵一发而动全身，难以维护</li>
+<li>大量的冗杂代码相互嵌套，代码的<strong>可读性变差</strong></li>
+</ul>
+</li>
+<li><p>例如 ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>( <span class="function">() =&gt;</span> &#123;	<span class="comment">//第一层回调函数</span></span><br><span class="line">    log(<span class="string">&#x27;延时1s输出&#x27;</span>);</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;	<span class="comment">//第2层回调函数</span></span><br><span class="line">        log(<span class="string">&#x27;在延时2秒输出&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span> &#123;</span><br><span class="line">            log(<span class="string">&quot;在延时3秒输出&quot;</span>)</span><br><span class="line">        &#125;，<span class="number">3000</span>)  </span><br><span class="line">    &#125;，<span class="number">2000</span>）</span><br><span class="line">&#125;，<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="2-2-Promis的基本概念"><a href="#2-2-Promis的基本概念" class="headerlink" title="2-2 Promis的基本概念"></a>2-2 Promis的基本概念</h5><ol>
+<li><p>Promise是一个构造函数</p>
+<ul>
+<li>可以创建Promise的 实例： <code>const p = new Promise();</code></li>
+<li>new 出来的 Promise 实例对象，<strong>代表一个异步操作</strong></li>
+</ul>
+</li>
+<li><p>Promise.prototype (构造函数的原型对象)上包含一个 <code>.then()</code>方法</p>
+<ul>
+<li>每一次<code>new Promise()</code>构造函数得到的实例对象，</li>
+<li>都可以<strong>通过原型链的方式</strong>访问到.then()方法，例如 ：p.then()</li>
+</ul>
+</li>
+<li><p>.then() 方法用来预先指定成功和失败的回调函数</p>
+<ul>
+<li>p.then(成功的回调函数， 失败的回调函数)</li>
+<li>p.then(result =&gt; {}, error =&gt;{})</li>
+<li>调用.then() 方法时，成功的回调函数是必选的，失败的回调函数是可选的</li>
+</ul>
+</li>
+</ol>
+<h5 id="2-3-基于回调函数按顺序读取文件内容-amp-then－fs的基本使用"><a href="#2-3-基于回调函数按顺序读取文件内容-amp-then－fs的基本使用" class="headerlink" title="2-3 基于回调函数按顺序读取文件内容&amp;ｔｈｅｎ－ｆｓ的基本使用"></a>2-3 基于<strong>回调函数</strong>按顺序读取文件内容&amp;ｔｈｅｎ－ｆｓ的基本使用</h5><ol>
+<li><p>提出问题 ： 如何解决如下的回调函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">fs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>,<span class="string">&#x27;utf8&#x27;</span>,<span class="function">(<span class="params">err1,r1</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(err1) <span class="keyword">return</span> log(err1,message)	<span class="comment">//读取文件1	失败</span></span><br><span class="line">    log (r1);	<span class="comment">// 读取 文件 1 成功</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 读取文件 2.txt</span></span><br><span class="line">    fs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>,<span class="string">&#x27;utf8&#x27;</span>,<span class="function">(<span class="params">err2,r2</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(err2) <span class="keyword">return</span> log(err2.message)	<span class="comment">//读取文件 2 失败</span></span><br><span class="line">        log(r2)	<span class="comment">//读取文件 2 失败</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 读取文件 3.txt</span></span><br><span class="line">        fs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>,<span class="string">&#x27;utf8&#x27;</span>,<span class="function">(<span class="params">err3,r3</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">if</span>(err3) <span class="keyword">return</span> log(err3,message)	<span class="comment">//读取文件 3 失败</span></span><br><span class="line">            log(r3)	<span class="comment">//读取文件 3 成功</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li><p>由于node.js官方提供的fs模块<strong>仅支持</strong>以<strong>回调函数等方式</strong>读取文件，不支持Promise的调用方式</p>
+<ul>
+<li>因此，需要先运行如下的命令，安装<code>then-fs</code>这个第三方包，从而支持我们基于Promise的方式读取文件的内容</li>
+<li><code>npm install then-fs</code></li>
+</ul>
+</li>
+<li><p>调用then-fs 提供的read File（）方法，可以异步读取文件的内容，<strong>它的返回值是Promise的实例对象</strong>。</p>
+<ul>
+<li><p>可以调用<code>.then()方法</code>为每个Promise异步操作指定<strong>成功</strong>和*<strong>失败</strong>之后的回调函数。</p>
+</li>
+<li><p>示例代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*基于 Promise 的方式读取文件</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line">thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>).then(<span class="function">(<span class="params">r1</span>) =&gt;</span> &#123; <span class="built_in">console</span>.log(r1) &#125;)</span><br><span class="line">thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>).then(<span class="function">(<span class="params">r2</span>) =&gt;</span> &#123; <span class="built_in">console</span>.log(r2) &#125;)</span><br><span class="line">thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>).then(<span class="function">(<span class="params">r3</span>) =&gt;</span> &#123; <span class="built_in">console</span>.log(r3) &#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h5 id="2-4-then-方法以及基于Promise-按顺序读取文件的内容-amp-通过catch方法捕获错误"><a href="#2-4-then-方法以及基于Promise-按顺序读取文件的内容-amp-通过catch方法捕获错误" class="headerlink" title="2-4 .then()方法以及基于Promise 按顺序读取文件的内容 &amp;通过catch方法捕获错误"></a>2-4 .then()方法以及基于Promise 按顺序读取文件的内容 &amp;通过catch方法捕获错误</h5><ol>
+<li><p>如果上一个.then()方法返回了一个新的Promise实例对象，则可以通过下一个.then()继续进行处理。</p>
+<ul>
+<li>通过.then()方法的链式调用 ， 就解决了回调地狱的问题</li>
+</ul>
+</li>
+<li><p>```js<br>import thenFs from ‘then-fs’</p>
+<p>thenFs</p>
+<pre><code>.readFile(&#39;./files/1.txt&#39;, &#39;utf8&#39;)
+.then((r1) =&gt; &#123;
+    console.log(r1)
+    return thenFs.readFile(&#39;./files/2.txt&#39;, &#39;utf8&#39;)
+&#125;)
+.then((r2) =&gt; &#123;
+    console.log(r2);
+    return thenFs.readFile(&#39;./files/3.txt&#39;, &#39;utf8&#39;)
+&#125;)
+.then((r3) =&gt; &#123;
+    console.log(r3);
+&#125;)
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">3.  通过.catch方法捕获错误</span><br><span class="line"></span><br><span class="line">   - 在Promise的链式操作如果发生了错误，可以使用`Promise.prototype.catch`方法进行捕获和处理 ：</span><br><span class="line"></span><br><span class="line">     ```js</span><br><span class="line">     import thenFs from &#x27;then-fs&#x27;</span><br><span class="line">     </span><br><span class="line">     thenFs</span><br><span class="line">         .readFile(&#x27;./files/11.txt&#x27;, &#x27;utf8&#x27;)</span><br><span class="line">         .then((r1) =&gt; &#123;</span><br><span class="line">             console.log(r1)</span><br><span class="line">             return thenFs.readFile(&#x27;./files/2.txt&#x27;, &#x27;utf8&#x27;)</span><br><span class="line">         &#125;)</span><br><span class="line">         .then((r2) =&gt; &#123;</span><br><span class="line">             console.log(r2);</span><br><span class="line">             return thenFs.readFile(&#x27;./files/3.txt&#x27;, &#x27;utf8&#x27;)</span><br><span class="line">         &#125;)</span><br><span class="line">         .then((r3) =&gt; &#123;</span><br><span class="line">             console.log(r3);</span><br><span class="line">         &#125;)</span><br><span class="line">         .catch((err) =&gt; &#123;</span><br><span class="line">             console.log(err.message);</span><br><span class="line">         &#125;)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>如果不希望前面的错误导致后续的.then无法正常执行，则可以将.catch 的调用提前，示例 ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line">thenFs</span><br><span class="line">    .readFile(<span class="string">&#x27;./files/11.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(err.message);</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function">(<span class="params">r1</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(r1)</span><br><span class="line">        <span class="keyword">return</span> thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function">(<span class="params">r2</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(r2);</span><br><span class="line">        <span class="keyword">return</span> thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function">(<span class="params">r3</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(r3);</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h5 id="2-5-Promise-—-Promise-all-以及Promise-race-方法"><a href="#2-5-Promise-—-Promise-all-以及Promise-race-方法" class="headerlink" title="2-5 Promise —- Promise.all()以及Promise.race()方法"></a>2-5 Promise —- Promise.all()以及Promise.race()方法</h5><ol>
+<li> Promise.all()方法会发起并行的Promise异步操作， 等所有的异步操作全部结束后才会执行下一步的.then 操作（等待机制）</li>
+</ol>
+<ul>
+<li>示例代码 ： </li>
+</ul>
+   <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> promiseArr = [</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">]</span><br><span class="line"><span class="built_in">Promise</span>.all(promiseArr).then(<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//结果</span></span><br><span class="line">[ <span class="string">&#x27;1111&#x27;</span>, <span class="string">&#x27;222\r\n&#x27;</span>, <span class="string">&#x27;333&#x27;</span> ]</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li><p>Promise.race()方法会发起并行的Promise异步操作，只要任何一个异步操作完成，就立刻执行下一步的.then操作（赛跑机制）</p>
+<ul>
+<li><p>实例代码 ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> promiseArr = [</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">    thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>),</span><br><span class="line">]</span><br><span class="line"><span class="built_in">Promise</span>.race(promiseArr).then(<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//运行结果</span></span><br><span class="line"><span class="number">222</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h5 id="2-6-基于Promise封装读文件的方法"><a href="#2-6-基于Promise封装读文件的方法" class="headerlink" title="2-6 基于Promise封装读文件的方法"></a>2-6 基于Promise封装读文件的方法</h5><ol>
+<li><p>方法的封装要求 ：</p>
+<ul>
+<li>方法的名称要定义为getFile</li>
+<li>方法接收一个<strong>形参fpath</strong>，表示要读取的文件的路径</li>
+<li>方法的返回值为Promise实例对象</li>
+</ul>
+</li>
+<li><p>getFile方法的基本定义 ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">   </span><br></pre></td></tr></table></figure></li>
+<li><p>创建具体的异步操作</p>
+<ul>
+<li><p>则需要在new Promise() 构造函数期间， <strong>传递一个function函数</strong>，将具体的异步操作定义到function函数内部</p>
+</li>
+<li><p>示例代码 ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 方法的名称为 getFile</span></span><br><span class="line"><span class="comment">// 2. 方法接收一个形参 fpath，表示要读取的文件的路径</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFile</span>(<span class="params">fpath</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//3. 方法的返回值为Promise实例对象</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">//注意： 该行代码中的new Promise()只是创建了一个形式上的异步操作（不知道是读文件的还是ajax的）</span></span><br><span class="line">        <span class="comment">// 4. 下面这行代码，表示这是一个具体的、读文件的异步操作</span></span><br><span class="line">        fs.readFile(fpath, <span class="string">&#x27;utf8&#x27;</span>, <span class="function">(<span class="params">err, dataStr</span>) =&gt;</span> &#123;&#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h5 id="2-7-async-await"><a href="#2-7-async-await" class="headerlink" title="2-7 async /await"></a>2-7 async /await</h5><ol>
+<li><p>什么是async / await</p>
+<ul>
+<li><p> async / await 是ES８（ECMAScript 2017）引入的新语法，用来简化 Promise 异步操作</p>
+</li>
+<li><p>在async / await 出现之前， 开发者只能通过链式 .then() 的方式 处理Promise 异步操作、</p>
+</li>
+<li><p>上面有示例，.then链式的优缺点 ：</p>
+<ul>
+<li>优点： 解决了回调地狱的问题</li>
+<li>缺点 ： 代码冗杂、阅读性差、不易理解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>示例:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getAllFile</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> r1 = <span class="keyword">await</span> thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(r1);</span><br><span class="line">    <span class="keyword">const</span> r2 = <span class="keyword">await</span> thenFs.readFile(<span class="string">&#x27;./files/2.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(r2);</span><br><span class="line">    <span class="keyword">const</span> r3 = <span class="keyword">await</span> thenFs.readFile(<span class="string">&#x27;./files/3.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(r3);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getAllFile()</span><br></pre></td></tr></table></figure></li>
+<li><p>async / await 的使用事项</p>
+<ul>
+<li><p>如果在function中使用了await ,则function 必须被 async 修饰</p>
+</li>
+<li><p>在async 方法中, 第一个await之前的代码会同步执行, await之后的代码会异步修饰</p>
+</li>
+<li><pre><code class="js">import thenFs from &#39;then-fs&#39;
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+console.log(&#39;A&#39;);
+async function getAllFile() &#123;
+    console.log(&#39;B &#39;);
+    const r1 = await thenFs.readFile(&#39;./files/1.txt&#39;, &#39;utf8&#39;);
+    console.log(r1);
+    const r2 = await thenFs.readFile(&#39;./files/2.txt&#39;, &#39;utf8&#39;)
+    console.log(r2);
+    const r3 = await thenFs.readFile(&#39;./files/3.txt&#39;, &#39;utf8&#39;)
+    console.log(r3);
+    console.log(&#39;D&#39;);
+&#125;
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p> <code>&lt;!-- more --&gt;</code></p>
+getAllFile()
+console.log(&#39;C&#39;);
+</code></pre>
+<ul>
+<li><p>运行结果:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">A</span><br><span class="line">B </span><br><span class="line">C</span><br><span class="line"><span class="number">1111</span></span><br><span class="line"><span class="number">222</span></span><br><span class="line"></span><br><span class="line"><span class="number">333</span></span><br><span class="line">D</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="2-8-EventLoop"><a href="#2-8-EventLoop" class="headerlink" title="2-8 EventLoop"></a>2-8 EventLoop</h5><ol>
+<li><p>JavaScript是单线程的语言</p>
+<ul>
+<li>JavaScript 是一门<strong>单线程执行</strong>的编程语言,也就是说,同一时间只能做一件事</li>
+<li>单线程执行任务队列的问题 :<ul>
+<li>如果前一个任务非常耗时,则后续的任务不得不一直等待,从而导致<strong>程序假死</strong>的问题</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>同步任务和异步任务 :</p>
+<ul>
+<li>JavaScript 把待执行的任务分为两类:(同步任务和异步任务)</li>
+<li>同步任务 (synchronous) : <ul>
+<li>又叫<strong>非耗时任务</strong>,指的是在主线程上排队执行的那些任务</li>
+<li>只有前一个任务执行完毕,才能执行后一个任务</li>
+</ul>
+</li>
+<li>异步任务(asynchronous)<ul>
+<li><p>又叫做耗时任务,异步任务由JavaScript <strong>委托给</strong>宿主环境进行执行</p>
+</li>
+<li><p>当异步任务执行完成后,会<strong>通知JavaScript主线程</strong>执行异步任务的回调函数</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>EventLoop的基本概念</p>
+<ul>
+<li>JavaScript主线程从“任务队列”中读物异步任务的回调函数，放到执行栈中依次执行</li>
+<li>这个过过程循环不断，所以整个的这种运行机制又称为 EventLoop（事件循环）</li>
+<li> <img src="https://i.loli.net/2021/08/16/74uyKH3VUrqEQeD.png" alt="1"></li>
+</ul>
+</li>
+<li><p>结合 EventLoop 分析输出的顺序</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> thenFs <span class="keyword">from</span> <span class="string">&#x27;then-fs&#x27;</span></span><br><span class="line"></span><br><span class="line">log(<span class="string">&#x27;A&#x27;</span>)</span><br><span class="line">thenFs.readFile(<span class="string">&#x27;./files/1.txt&#x27;</span>,<span class="string">&#x27;utf8&#x27;</span>).then(<span class="function"><span class="params">dataStr</span> =&gt;</span> &#123;</span><br><span class="line">    log(<span class="string">&#x27;B&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    log(<span class="string">&#x27;C&#x27;</span>)</span><br><span class="line">&#125;,<span class="number">0</span>)</span><br><span class="line">log(<span class="string">&#x27;D&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//运行结果</span></span><br><span class="line">ADCB</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>A和D属于 <strong>同步任务</strong>，会根据代码的先后顺序<strong>依次被执行</strong></li>
+<li>C和B属于异步任务，他们的回调函数会被加入到任务队列中，等待主线程空闲时在执行</li>
+</ul>
+</li>
+</ol>
+<h2 id="第三章-宏任务和微任务-amp-API"><a href="#第三章-宏任务和微任务-amp-API" class="headerlink" title="第三章  宏任务和微任务 &amp; API"></a>第三章  宏任务和微任务 &amp; API</h2><h5 id="3-1-宏任务和微任务"><a href="#3-1-宏任务和微任务" class="headerlink" title="3-1 宏任务和微任务"></a>3-1 宏任务和微任务</h5><ol>
+<li><p>JavaScript 把异步任务又做了进一步的划分， 异步任务又分为两类</p>
+<ul>
+<li>宏任务 （macrotask）：<ul>
+<li>异步Ajax请求</li>
+<li>setTimeout ， setInterval</li>
+<li>文件操作</li>
+<li>其它宏任务</li>
+</ul>
+</li>
+<li>微任务（microtask）<ul>
+<li>Promise.then / .catch / .finally</li>
+<li>process.nextTick</li>
+<li>其他微任务</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><img src="https://i.loli.net/2021/08/16/jVra4y52ekdlnWY.png" alt="2"></p>
+</li>
+<li><p>宏任务和微任务的执行顺序</p>
+<ul>
+<li>每一个宏任务执行完之后，都会检查是否存在待执行的微任务</li>
+<li>如果有，则执行所有微任务之后，再继续执行下一个宏任务</li>
+</ul>
+<p><img src="https://i.loli.net/2021/08/16/HlJmX2RYIVahvO4.png" alt="3"></p>
+</li>
+<li><p>取银行办业务的场景</p>
+<ul>
+<li>小云和小腾去银行办业务，首先要取号后进行排队<ul>
+<li>宏任务队列</li>
+</ul>
+</li>
+<li>假设当前银行网点只有一个柜员，小云在办理业务时，小腾只能等待<ul>
+<li>单线程，宏任务按次序执行</li>
+</ul>
+</li>
+<li>小云办完存款业务后，柜员询问是否还想办理其他业务？<ul>
+<li>当前宏任务执行完毕，检查是否有微任务</li>
+</ul>
+</li>
+<li>小云告诉柜员 ： 想买理财产品<ul>
+<li>执行微任务，后续宏任务被推迟</li>
+</ul>
+</li>
+<li>小云离开柜台后，柜员开始为腾办理业务<ul>
+<li>所有微任务执行完毕，开始执行下一个宏任务</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>请分析以下代码输出的顺序</p>
+<ul>
+<li>156234789</li>
+</ul>
+<p><img src="https://i.loli.net/2021/08/16/7SzfjkdKJW6ytlA.png" alt="4"></p>
+</li>
+</ol>
+<h5 id="3-2-API接口案例-—-初始化项目"><a href="#3-2-API接口案例-—-初始化项目" class="headerlink" title="3-2  API接口案例 — 初始化项目"></a>3-2  API接口案例 — 初始化项目</h5><ol>
+<li><p>案例需求</p>
+<ul>
+<li>基于MySQL数据库 + Express 对外提供 <strong>用户列表</strong>的API接口服务</li>
+<li>用到的技术点 ：<ul>
+<li>第三方包 exxpress 和mysql2</li>
+<li>ES6 模块化</li>
+<li>Promise</li>
+<li>async / await</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>主要的实现步骤、</p>
+<ul>
+<li>搭建项目的基本结构</li>
+<li>创建基本的服务器</li>
+<li>创建 db 数据库操作模块</li>
+<li>创建 user_ctrl 业务模块</li>
+<li>创建user_router 路由模块</li>
+</ul>
+</li>
+<li><p>搭建项目的基本结构</p>
+<ul>
+<li>启用ES6 模块化支持<ul>
+<li>在package.json中声明<code>&quot;type&quot;:&quot;module&quot;</code></li>
+</ul>
+</li>
+<li>安装第三方依赖包<ul>
+<li>运行 <code>npm install express@4.17.1     mysql2@2.2.5</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>创建基本的服务器</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用ES6 的默认导入语法</span></span><br><span class="line"><span class="keyword">import</span> express <span class="keyword">from</span> <span class="string">&#x27;express&#x27;</span></span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line"></span><br><span class="line">app.listen(<span class="number">80</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;server running at http：//127.0.0.1&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="3-3-创建db数据库操作模块"><a href="#3-3-创建db数据库操作模块" class="headerlink" title="3-3 创建db数据库操作模块"></a>3-3 创建db数据库操作模块</h5><ol>
+<li></li>
+</ol>
+<h5 id="3-4-创建并挂载路由模块（使用user-router路由模块）"><a href="#3-4-创建并挂载路由模块（使用user-router路由模块）" class="headerlink" title="3-4 创建并挂载路由模块（使用user_router路由模块）"></a>3-4 创建并挂载路由模块（使用user_router路由模块）</h5><ol>
+<li>有个小bug，等之后</li>
+</ol>
+<h5 id="3-5-API接口案例-—-使用try-catch捕获异常错误"><a href="#3-5-API接口案例-—-使用try-catch捕获异常错误" class="headerlink" title="3-5  API接口案例 —- 使用try...catch捕获异常错误"></a>3-5  API接口案例 —- 使用<code>try...catch</code>捕获异常错误</h5><ol>
+<li></li>
+</ol>
 
       
 
@@ -283,7 +684,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://hannah-bingo.github.io/2021/08/28/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://hannah-bingo.github.io/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -297,18 +698,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/08/29/B_%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%BD%91%E9%A1%B5%E7%89%B9%E6%95%88/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/08/20/D_git/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          移动端网页特效
+          git基础
         
       </div>
     </a>
   
   
-    <a href="/2021/08/25/A_%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">移动web开发流式布局</div>
+    <a href="/2021/08/20/E_vue2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue2</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -335,7 +736,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-ES6%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B8%8E%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">第一章 ES6模块化与异步编程高级用法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-1-%E5%9B%9E%E9%A1%BE%EF%BC%8B%E6%A8%A1%E5%9D%97%E5%8C%96"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1-1  回顾＋模块化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-2-ES6%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">1-2 ES6模块化规范</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-3-%E5%AF%BC%E5%87%BA%E4%B8%8E%E9%BB%98%E8%AE%A4%E5%AF%BC%E5%85%A5"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">1-3 导出与默认导入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-%E6%8C%89%E9%9C%80%E5%AF%BC%E5%85%A5%E4%B8%8E%E6%8C%89%E9%9C%80%E5%AF%BC%E5%87%BA"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">1-4 按需导入与按需导出</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-5-%E7%9B%B4%E6%8E%A5%E5%AF%BC%E5%85%A5%E5%B9%B6%E6%89%A7%E8%A1%8C%E6%A8%A1%E5%9D%97%E4%B8%AD%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">1-5 直接导入并执行模块中的代码</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-Promise"><span class="toc-number">2.</span> <span class="toc-text">第二章 Promise</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-%E5%9B%9E%E8%B0%83%E5%9C%B0%E7%8B%B1%E5%8F%8APromise%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">2-1 回调地狱及Promise的作用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-Promis%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">2.0.0.2.</span> <span class="toc-text">2-2 Promis的基本概念</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-3-%E5%9F%BA%E4%BA%8E%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9-amp-then%EF%BC%8Dfs%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">2.0.0.3.</span> <span class="toc-text">2-3 基于回调函数按顺序读取文件内容&amp;ｔｈｅｎ－ｆｓ的基本使用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-4-then-%E6%96%B9%E6%B3%95%E4%BB%A5%E5%8F%8A%E5%9F%BA%E4%BA%8EPromise-%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9-amp-%E9%80%9A%E8%BF%87catch%E6%96%B9%E6%B3%95%E6%8D%95%E8%8E%B7%E9%94%99%E8%AF%AF"><span class="toc-number">2.0.0.4.</span> <span class="toc-text">2-4 .then()方法以及基于Promise 按顺序读取文件的内容 &amp;通过catch方法捕获错误</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-5-Promise-%E2%80%94-Promise-all-%E4%BB%A5%E5%8F%8APromise-race-%E6%96%B9%E6%B3%95"><span class="toc-number">2.0.0.5.</span> <span class="toc-text">2-5 Promise —- Promise.all()以及Promise.race()方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-6-%E5%9F%BA%E4%BA%8EPromise%E5%B0%81%E8%A3%85%E8%AF%BB%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">2.0.0.6.</span> <span class="toc-text">2-6 基于Promise封装读文件的方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-7-async-await"><span class="toc-number">2.0.0.7.</span> <span class="toc-text">2-7 async &#x2F;await</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-8-EventLoop"><span class="toc-number">2.0.0.8.</span> <span class="toc-text">2-8 EventLoop</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%AE%8F%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%BE%AE%E4%BB%BB%E5%8A%A1-amp-API"><span class="toc-number">3.</span> <span class="toc-text">第三章  宏任务和微任务 &amp; API</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-1-%E5%AE%8F%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%BE%AE%E4%BB%BB%E5%8A%A1"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">3-1 宏任务和微任务</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-API%E6%8E%A5%E5%8F%A3%E6%A1%88%E4%BE%8B-%E2%80%94-%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B9%E7%9B%AE"><span class="toc-number">3.0.0.2.</span> <span class="toc-text">3-2  API接口案例 — 初始化项目</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-3-%E5%88%9B%E5%BB%BAdb%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E6%A8%A1%E5%9D%97"><span class="toc-number">3.0.0.3.</span> <span class="toc-text">3-3 创建db数据库操作模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-4-%E5%88%9B%E5%BB%BA%E5%B9%B6%E6%8C%82%E8%BD%BD%E8%B7%AF%E7%94%B1%E6%A8%A1%E5%9D%97%EF%BC%88%E4%BD%BF%E7%94%A8user-router%E8%B7%AF%E7%94%B1%E6%A8%A1%E5%9D%97%EF%BC%89"><span class="toc-number">3.0.0.4.</span> <span class="toc-text">3-4 创建并挂载路由模块（使用user_router路由模块）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-5-API%E6%8E%A5%E5%8F%A3%E6%A1%88%E4%BE%8B-%E2%80%94-%E4%BD%BF%E7%94%A8try-catch%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8%E9%94%99%E8%AF%AF"><span class="toc-number">3.0.0.5.</span> <span class="toc-text">3-5  API接口案例 —- 使用try...catch捕获异常错误</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -349,7 +750,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hello-world" data-title="Hello World" data-url="http://hannah-bingo.github.io/2021/08/28/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="E_ES6模块化+Promise+EventLoop+API" data-title="ES6模块化+Promise+EventLoop+API" data-url="http://hannah-bingo.github.io/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -372,8 +773,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://hannah-bingo.github.io/2021/08/28/hello-world/", 
-    sourceId: "hello-world",
+    url: "http://hannah-bingo.github.io/2021/08/20/E_ES6%E6%A8%A1%E5%9D%97%E5%8C%96+Promise+EventLoop+API/", 
+    sourceId: "E_ES6模块化+Promise+EventLoop+API",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -382,7 +783,7 @@
   
 
   
-  <div id="SOHUCS" sid="hello-world" ></div> 
+  <div id="SOHUCS" sid="E_ES6模块化+Promise+EventLoop+API" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({

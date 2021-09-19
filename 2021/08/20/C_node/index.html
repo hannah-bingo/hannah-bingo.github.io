@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://hannah-bingo.github.io">
-  <title>Hello World | 翼遥bingo的个人博客</title>
+  <title>node.js | 翼遥bingo的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Qu">
+  <meta name="description" content="教学目标：  能够了解node.js是什么 ————–   js运行环境，就是一个工具  能够在REPL环境中执行JS代码————– 仿谷歌控制器  能够使用node运行JS代码 —————– node文件js  理解node中模块的定义 ——————— 1-创建xx.js文件  2-exposts  理解commonJS规范 ——————- 1-文件就是模块，2-exports，3-re">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://hannah-bingo.github.io/2021/08/28/hello-world/index.html">
+<meta property="og:title" content="node.js">
+<meta property="og:url" content="http://hannah-bingo.github.io/2021/08/20/C_node/index.html">
 <meta property="og:site_name" content="翼遥bingo的个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Qu">
+<meta property="og:description" content="教学目标：  能够了解node.js是什么 ————–   js运行环境，就是一个工具  能够在REPL环境中执行JS代码————– 仿谷歌控制器  能够使用node运行JS代码 —————– node文件js  理解node中模块的定义 ——————— 1-创建xx.js文件  2-exposts  理解commonJS规范 ——————- 1-文件就是模块，2-exports，3-re">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-08-28T04:10:19.375Z">
-<meta property="article:modified_time" content="2021-09-19T08:38:20.813Z">
+<meta property="og:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/Ajax+Git+Node.js/Node.js/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/1.png">
+<meta property="og:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/Ajax+Git+Node.js/Node.js/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/2.png">
+<meta property="article:published_time" content="2021-08-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-09-19T08:42:05.294Z">
 <meta property="article:author" content="Hannah">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="d:/Front-end/md%E7%AC%94%E8%AE%B0/Ajax+Git+Node.js/Node.js/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/1.png">
   
     <link rel="alternative" href="/atom.xml" title="翼遥bingo的个人博客" type="application/atom+xml">
   
@@ -158,20 +161,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-C_node" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      node.js
     </h1>
   
 
         
-        <a href="/2021/08/28/hello-world/" class="archive-article-date">
-  	<time datetime="2021-08-28T04:10:19.375Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-28</time>
+        <a href="/2021/08/20/C_node/" class="archive-article-date">
+  	<time datetime="2021-08-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-20</time>
 </a>
         
       </header>
@@ -180,20 +183,419 @@
       
          <span id="more"></span>
 
-<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>教学目标：</p>
+<ul>
+<li><p>能够了解node.js是什么 ————–   js运行环境，就是一个工具</p>
+</li>
+<li><p>能够在REPL环境中执行JS代码————– 仿谷歌控制器</p>
+</li>
+<li><p>能够使用node运行JS代码 —————– node文件js</p>
+</li>
+<li><p>理解node中模块的定义 ——————— 1-创建xx.js文件  2-exposts</p>
+</li>
+<li><p>理解commonJS规范 ——————- 1-文件就是模块，2-exports，3-require</p>
+</li>
+<li><p>理解commonjs规范中exports与module exports 的区别</p>
+<p>————–简写</p>
+</li>
+<li><p>使用url模块将erl转换为对象————-url parse（地址， true）</p>
+</li>
+<li><p>使用fs模块读取文件内容—————-fs.readFile</p>
+</li>
+<li><p>使用fs模块将文本内容写入文件 ——————fs.writeFile</p>
+</li>
+<li><p>使用node的核心模块开启一个HTTP服务器</p>
+</li>
+<li><p>理解网络请求及响应的过程</p>
+</li>
+<li><p>使用Http模块响应数据回浏览器  —— res.write() + res.end()</p>
+</li>
+<li><p>在http中接受get和post请求</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="第一章-（day-1）"><a href="#第一章-（day-1）" class="headerlink" title="第一章 （day_1）"></a>第一章 （day_1）</h2><h5 id="1-1-Node-JS简介"><a href="#1-1-Node-JS简介" class="headerlink" title="1-1 Node JS简介"></a>1-1 Node JS简介</h5><ol>
+<li><p>NodeJS是JavaScript运行环境</p>
+<ul>
+<li>安装成功后可以直接通过浏览器访问JavaScript代码</li>
+</ul>
+</li>
+<li><ul>
+<li><p>作用 ： 让JavaScript成为与PHP、Python等平起平坐的语言</p>
+</li>
+<li><p>概括 ：前端脱离后端，直接通过JS写项目</p>
+<p><img src="D:/Front-end/md%E7%AC%94%E8%AE%B0/Ajax+Git+Node.js/Node.js/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/1.png" alt="1"></p>
+</li>
+</ul>
+</li>
+<li><p>去哪里下</p>
+<ul>
+<li><p>官网 ： nodejs.org</p>
+</li>
+<li><p>中文网址 : nodejs.cn</p>
+</li>
+<li><p>学习社区：cnodejs.org</p>
+<hr>
+</li>
+<li><p>nvm工具 ： 实现nodejs任意版本切换</p>
+</li>
+<li><p>npm工具 ： 下载nodejs所需模块（工具库）</p>
+</li>
+<li><p>nrm工具 ： 切换npm下载源</p>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="1-2-Node-js初体验-REPL"><a href="#1-2-Node-js初体验-REPL" class="headerlink" title="1-2 Node.js初体验(REPL)"></a>1-2 Node.js初体验(REPL)</h5><ol>
+<li><p>简介 ：</p>
+<ul>
+<li>R ：read  – 读取（读取用户输入的JS代码）</li>
+<li>E ： exec – 执行（执行用户输入的JS代码）</li>
+<li>P ： print – 打印（打印用户输入的JS代码）</li>
+<li>L ： loop  – 循环（后续所有JS代码执行都会循环以上命令）</li>
+<li>退出（ctrl + c）</li>
+</ul>
+</li>
+<li><p>JS三大组成部分 ：ECMA/DOM/BOM</p>
+<ul>
+<li>ECMAScript ：（变量，判断，循环），<strong>声明JS变量、判断、循环等语法</strong>；<strong>DOM（document）</strong>、<strong>BOM（window、location</strong>）</li>
+<li>内置/核心模块 ： http服务、fs文件操作、url路径、path路径操作、os操作系统等<ul>
+<li>模块（服务器） ： 接收HTTP请求 ，响应数据</li>
+</ul>
+</li>
+<li>第三方模块 ： </li>
+<li>自定义模块 ：自己创建的js文件</li>
+</ul>
+</li>
+<li><p>CommonJS模块规范：</p>
+<ul>
+<li><p>一个文件就是一个模块</p>
+</li>
+<li><p>通过exports和<code>modul.exports</code>来导出模块中的成员（声明模块中哪些功能可以使用）</p>
+<ul>
+<li><p>步骤一 ： 导出成员（声明模块/文件中哪些方法可以被外部使用）</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//写法一： </span><br><span class="line">exports.属性/方法名 = 功能</span><br><span class="line">//写法二:</span><br><span class="line">module.export.属性/方法名 = 变量名</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>例：b.js</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// 步骤一</span><br><span class="line">function add() &#123;</span><br><span class="line">    console.log(&#x27;this is add&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function del() &#123;</span><br><span class="line">    console.log(&#x27;this is del&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function edit() &#123;</span><br><span class="line">    console.log(&#x27;this is edit&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function select() &#123;</span><br><span class="line">    console.log(&#x27;this is select&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//步骤2 ： 导出（语法 ： exports/module.exports.成员名 = 值）</span><br><span class="line">exports.add = add;</span><br><span class="line">exports.edit = edit;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>步骤二 ：外部引入使用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var 对象 = require（‘路径及文件名’）;</span><br><span class="line">对象、属性或方法名</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>例如 ： a.js</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 引入自定义模块</span><br><span class="line">var b = require(&#x27;./b&#x27;); //注： .js不用写</span><br><span class="line"></span><br><span class="line">console.log(b);</span><br><span class="line">b.add();</span><br><span class="line">b.edit();</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>通过require来加载模块</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="D:/Front-end/md%E7%AC%94%E8%AE%B0/Ajax+Git+Node.js/Node.js/%E7%AC%94%E8%AE%B0%E5%9B%BE%E7%89%87/2.png" alt="2"></p>
+<h5 id="1-2-内置os模块"><a href="#1-2-内置os模块" class="headerlink" title="1-2 内置os模块"></a>1-2 内置os模块</h5><blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//1. 创建os对象（引入nodejs内置模块）</span><br><span class="line">var os = require(&quot;os&quot;);</span><br><span class="line">//2. 调用os对象方法获取系统数据</span><br><span class="line">console.log(&#x27;hello.&#x27; + os.EOL + &#x27;itcast&#x27;);</span><br><span class="line">console.log(&#x27;主机名：&#x27; + os.hostname());</span><br><span class="line">console.log(&#x27;操作系统名&#x27; + os.type());</span><br><span class="line">console.log(&#x27;操作系统平台：&#x27; + os.platform());</span><br><span class="line">console.log(&#x27;内存总量&#x27; + os.totalmem() + &quot;字节.&quot;);</span><br><span class="line">console.log(&#x27;空闲内存&#x27; + os.freemem() + &quot;字节.&quot;);</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p> <code>&lt;!-- more --&gt;</code></p>
+</blockquote>
+<ol>
+<li><p>字节 ： 计算机计量单位，表示数据量的多少。类似生活中的克、千克等</p>
+</li>
+<li><p>JS代替阿帕奇写服务端网页</p>
+</li>
+<li><p>在mvc部分</p>
+<ul>
+<li>dirname :后去一层</li>
+<li>basename ： 取最后一层</li>
+</ul>
+</li>
+</ol>
+<h5 id="1-3-内置path模块"><a href="#1-3-内置path模块" class="headerlink" title="1-3 内置path模块"></a>1-3 内置path模块</h5><ol>
+<li><p><code>path.js</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//1. 引入内置模块</span><br><span class="line">var path = require(&#x27;path&#x27;);</span><br><span class="line">//2. 练习</span><br><span class="line">var testData = &#x27;c:/app/view/gods/add.html&#x27;;</span><br><span class="line"></span><br><span class="line">console.log(path.basename(testData)); //add.html</span><br><span class="line">testData = path.dirname(testData);</span><br><span class="line">console.log(testData);</span><br><span class="line">console.log(path.basename(testData));</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="1-4-url模块"><a href="#1-4-url模块" class="headerlink" title="1- 4 url模块"></a>1- 4 url模块</h5><ol>
+<li><p><code>url</code> 模块提供用于网址处理和解析的实用工具。 可以使用以下方式访问它：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">&#x27;url&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> url <span class="keyword">from</span> <span class="string">&#x27;url&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>练习 ：</p>
+<ul>
+<li><p>需求 ： 获取<a target="_blank" rel="noopener" href="http://itcast.cn/?name=%E5%BC%A0%E4%B8%89&amp;age=18%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0">http://itcast.cn?name=张三&amp;age=18中的参数</a></p>
+</li>
+<li><p><code>url.parse()</code> 返回的对象的属性</p>
+</li>
+<li><p>```js<br>// 引入url内置模块<br>var url = require(‘url’)</p>
+<p>//2. 使用<br>var data = ‘<a target="_blank" rel="noopener" href="http://itcast.cn/?name">http://itcast.cn?name</a> = 张三&amp;age = 18’;<br>console.log(data);<br>console.log(url.parse(data));<br>console.log(url.parse(data, true)); //query变化了对象，比较好获取</p>
+<p>var urlQueryObj = url.parse(data, true);<br>console.log(urlQueryObj.query.name); //现在不能用了<br>// console.log();</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##### 1-5 内置fs模块</span><br><span class="line"></span><br><span class="line">1. ##### `filehandle.writeFile(data, options)`</span><br><span class="line"></span><br><span class="line">2. write.js</span><br><span class="line"></span><br><span class="line">   ```js</span><br><span class="line">   //1. 引入fs内置模块 files</span><br><span class="line">   var fs = require(&#x27;fs&#x27;);</span><br><span class="line">   //2. 练习,通过write.js文件创建a.txt写入你好，传智</span><br><span class="line">   </span><br><span class="line">   fs.writeFile(&#x27;./a.txt&#x27;, &#x27;你好，传智&#x27;, function(err) &#123;</span><br><span class="line">       //err 为null  成功</span><br><span class="line">       if (err) &#123;</span><br><span class="line">           console.log(err);</span><br><span class="line">           return;</span><br><span class="line">       &#125;</span><br><span class="line">       console.log(&#x27;success&#x27;);</span><br><span class="line">   &#125;);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>read.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1. 引入fs模块</span></span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"><span class="comment">//2. 练习； 读取a.txt内容</span></span><br><span class="line">fs.readFile(<span class="string">&#x27;a.txt&#x27;</span>, <span class="string">&#x27;utf8&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">err, data</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(err);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(data); <span class="comment">//脚下留心 ： 默认不是我们可以识别的内容</span></span><br><span class="line">    <span class="comment">// Buffer对象</span></span><br><span class="line">    <span class="comment">//通过Buffer对象，toString() 转化成字符显示</span></span><br><span class="line">    <span class="built_in">console</span>.log(data.toString());</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="1-6-内置http模块："><a href="#1-6-内置http模块：" class="headerlink" title="1-6 内置http模块："></a>1-6 内置http模块：</h5><ol>
+<li><p>web服务器 ： 监听80端口，接收请求，响应请求</p>
+</li>
+<li><p>http.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.引入模块</span></span><br><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>);</span><br><span class="line"><span class="comment">//2. 创建web服务器</span></span><br><span class="line"><span class="keyword">var</span> server = http.createServer();</span><br><span class="line"><span class="comment">//3. 监听请求</span></span><br><span class="line">server.on(<span class="string">&#x27;request&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123; <span class="comment">//req = request 请求 res - response 响应</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;收到客户端请求&#x27;</span>);</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="comment">//4. 启动请求</span></span><br><span class="line">server.listen(<span class="number">8080</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;服务启动成功，访问: http://localhost:8080&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li><p>http2.js乱码解决</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.引入模块</span></span><br><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>);</span><br><span class="line"><span class="comment">//2. 创建web服务器</span></span><br><span class="line"><span class="keyword">var</span> server = http.createServer();</span><br><span class="line"><span class="comment">//3. 监听请求</span></span><br><span class="line">server.on(<span class="string">&#x27;request&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123; <span class="comment">//req = request 请求 res - response 响应</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;收到用户请求，请求地址:&#x27;</span> + req.url);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 留心，有请求就必须有响应，没有响应网页无法打开,</span></span><br><span class="line">        <span class="comment">// 会出现乱码</span></span><br><span class="line">        res.setHeader(<span class="string">&#x27;Content-Type&#x27;</span>, <span class="string">&#x27;text/html;charset=utf-8&#x27;</span>);</span><br><span class="line">        res.write(<span class="string">&quot;哥哥来抓我呀，&lt;a href=&#x27;http://nn.com&#x27;&gt;点击进入我的世界&lt;/a&gt;&quot;</span>);</span><br><span class="line">        res.end();</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="comment">//4. 启动请求</span></span><br><span class="line">server.listen(<span class="number">8080</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;服务启动成功，访问: http://localhost:8080&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li><p>响应不同的界面</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.引入模块</span></span><br><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>);</span><br><span class="line"><span class="comment">//2. 创建web服务器</span></span><br><span class="line"><span class="keyword">var</span> server = http.createServer();</span><br><span class="line"><span class="comment">//3. 监听请求</span></span><br><span class="line">server.on(<span class="string">&#x27;request&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123; <span class="comment">//req = request 请求 res - response 响应</span></span><br><span class="line">        <span class="comment">// 判断请求的地址</span></span><br><span class="line">        <span class="keyword">if</span> (req.url == <span class="string">&#x27;/&#x27;</span>) &#123;</span><br><span class="line">            $msg = <span class="string">&#x27;this is index&#x27;</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (req.url == <span class="string">&#x27;/login&#x27;</span>) &#123;</span><br><span class="line">            $msg = <span class="string">&#x27;this is login&#x27;</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            $msg = <span class="string">&#x27;404&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;收到用户请求，请求地址:&#x27;</span> + req.url);</span><br><span class="line">        <span class="comment">// 留心，有请求就必须有响应，没有响应网页无法打开,</span></span><br><span class="line">        <span class="comment">// 会出现乱码</span></span><br><span class="line">        res.setHeader(<span class="string">&#x27;Content-Type&#x27;</span>, <span class="string">&#x27;text/html;charset=utf-8&#x27;</span>);</span><br><span class="line">        res.write($msg + <span class="string">&quot;&lt;a href=&#x27;http://nn.com&#x27;&gt;点击进入我的世界&lt;/a&gt;&quot;</span>);</span><br><span class="line">        <span class="comment">// res.end();</span></span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="comment">//4. 启动请求</span></span><br><span class="line">server.listen(<span class="number">8080</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;服务启动成功，访问: http://localhost:8080&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li><p>请求对象（request）</p>
+<ul>
+<li>req.headers    ——    获取请求头信息（对象）</li>
+<li>req.rawHeaders ——  获取请求头信息（数组）</li>
+<li>req.httpVarsion ———–  获取HTTP版本</li>
+<li>req.method ————-  获取请求方法</li>
+<li>req.url ————— 获取请求路径（注：不含网址）</li>
+</ul>
+</li>
+<li><p>响应对象(response)</p>
+<ul>
+<li><p>res.statusCode = 404;</p>
+</li>
+<li><p>res.statusMessage = ‘Not Found’;</p>
+</li>
+<li><p>res.setHeader(‘Content-Type’,’text/html; charset=utf-8’)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 简化版</span></span><br><span class="line">res.writeHeader(<span class="number">404</span>, <span class="string">&#x27;Not Found&#x27;</span>, &#123;</span><br><span class="line">	<span class="string">&quot;content-Type&quot;</span>	: <span class="string">&#x27;text/html; charset=utf8&#x27;</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">res.write(数据)</span><br><span class="line">res.end()</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol>
+<li>自定义网站图标<ul>
+<li>说明： 用户通过浏览器访问html 文件会发送n次http请求</li>
+<li>原因 ： 除了html需求请求外，还有css/js/网站图标等需要发送http请求</li>
+<li>自定义网站图标</li>
+</ul>
+</li>
+<li>通过NodeJS仿 Apache请求</li>
+</ol>
+<h5 id="1-7-留言板案例实现"><a href="#1-7-留言板案例实现" class="headerlink" title="1-7 留言板案例实现"></a>1-7 留言板案例实现</h5><blockquote>
+<p>通过Nodejs一步步创建web服务器</p>
+<ul>
+<li>对应的页面要响应</li>
+<li>静态资源也要响应（阿帕奇）</li>
+</ul>
+</blockquote>
+<ol>
+<li>初始化目录<ul>
+<li>public ： 防止静态资源</li>
+<li>view ： 视图</li>
+<li>文件app.js ： 创建http服务器</li>
+</ul>
+</li>
+</ol>
+<h2 id="第二章-NodeJS（NPM使用，模块引擎、Express框架）"><a href="#第二章-NodeJS（NPM使用，模块引擎、Express框架）" class="headerlink" title="第二章 NodeJS（NPM使用，模块引擎、Express框架）"></a>第二章 NodeJS（NPM使用，模块引擎、Express框架）</h2><h5 id="2-1-NPM简介"><a href="#2-1-NPM简介" class="headerlink" title="2-1 NPM简介"></a>2-1 NPM简介</h5><ol>
+<li>npm<ul>
+<li>命令行工具</li>
+<li>是英文node package manager</li>
+</ul>
+</li>
+<li>npm 语法<ul>
+<li>命令<ul>
+<li>查看 ： npm list</li>
+<li>安装: npm install （模块 或 @版本号）[安装可选参数]</li>
+<li>卸载 ： npm uninstall 模块</li>
+</ul>
+</li>
+<li>安装参数<ul>
+<li><code>--save</code>: 记录生产环境所需模块（默认）</li>
+<li><code>--save--dec</code> :记录开发环境所需模块</li>
+<li><code>-g</code>: 该模块可在命令行中运行（global），其他都在当前目录下；-g在全局目录中（通过npm config list 可以看全局目录所在位置）</li>
+</ul>
+</li>
+<li><strong>怎么知道npm在哪个目录</strong>，用<code>npm config list</code>查看npm下载在哪个目录，查看prefix</li>
+</ul>
+</li>
+<li>NPM使用<ul>
+<li>MIME是一个规则（类似text/html 、 image/png 文件等）</li>
+<li>需求 ： 安装mine 模块（该模块用户判断文件mone类型）</li>
+<li>明确 : npm是nodejs项目<strong>模块管理工具</strong></li>
+<li>使用 ： 1-初始化项目 2- 安装/卸载模块</li>
+</ul>
+</li>
+<li><ul>
+<li>步骤一： 初始化项目（ps. 自动创建package.json 文件，作用： 描述项目依赖）</li>
+</ul>
+</li>
+<li>将NPM看作一个软件商店，提供了各种软件</li>
+</ol>
+<h5 id="2-2-NPM模块版本控制"><a href="#2-2-NPM模块版本控制" class="headerlink" title="2-2 NPM模块版本控制"></a>2-2 NPM模块版本控制</h5><ol>
+<li><p>科普软件版本含义 ：</p>
+<ul>
+<li>aplha版 ： - 内测版（功能不全，BUG多）</li>
+<li>beta版 ： - 公测版（功能不全，发骚有准备，依旧存在Bug）</li>
+<li>rc版 ： - 预测版（功能不再增加）</li>
+<li>stable版 ： - 用户可用</li>
+</ul>
+</li>
+<li><p>主版本、次版本、修改版本号</p>
+<ul>
+<li>主版本 ： 功能模块有大的变动，比如增加多个模块或者整体架构发生变化</li>
+<li>次版本 ： 次版本号的升级对应只是局部的变动</li>
+<li>修改版： BUG修改或者功能的扩充等</li>
+</ul>
+<hr>
+<ul>
+<li>~ 用户使用该版本之后，最多升级到【修改版】最新</li>
+<li>^用户使用该版本之后，最多升级到【次版本】最新</li>
+<li>*用户使用该版本之后，可以升级到最新版本</li>
+</ul>
+</li>
+<li><p>举例子 ：</p>
+<ul>
+<li>目前软件的版本 ：<ul>
+<li>1.1.8</li>
+<li>1.3.6</li>
+<li>2.3.0</li>
+</ul>
+</li>
+<li>用户所用版本 ： ~1.0.0</li>
+<li>最高升级到 ：1.1.8</li>
+</ul>
+</li>
+</ol>
+<h5 id="2-3-NPM源管理"><a href="#2-3-NPM源管理" class="headerlink" title="2-3 NPM源管理"></a>2-3 NPM源管理</h5><ol>
+<li><p>缺点 ： </p>
+<ul>
+<li> 通过npm命令下载会到国外服务器获取</li>
+<li>下载速度慢，可以切换国内服务器</li>
+<li>nrm是资源管理工具，可以切换国内服务器下载</li>
+</ul>
+</li>
+<li><p>命令 ：</p>
+<ul>
+<li>安装 ： <code>npm install nrm -g</code></li>
+<li>查看 ： <code>nrm ls(注： 查看list缩写，查看可用服务器)</code></li>
+<li>切换 ： <code>nrm use 服务器名</code></li>
+<li>测速： <code>nrm test npm</code> </li>
+</ul>
+</li>
+</ol>
+<h5 id="2-4-NPM-自定义脚本命令"><a href="#2-4-NPM-自定义脚本命令" class="headerlink" title="2-4 NPM 自定义脚本命令"></a>2-4 NPM 自定义脚本命令</h5><ol>
+<li></li>
+</ol>
+<h5 id="2-5-NPM包自定义发布"><a href="#2-5-NPM包自定义发布" class="headerlink" title="2-5 NPM包自定义发布"></a>2-5 NPM包自定义发布</h5><ol>
+<li><ul>
+<li>模块： 在node中就是一个文件</li>
+<li>包： N个模块、目录、package.json等组成，让别人require</li>
+</ul>
+</li>
+<li>需求： 发布itcast-php-teacher包：<ul>
+<li>步骤一：创建day22开发目录 -&gt;  初始化– &gt; 修改package.json文件</li>
+<li>打开npmjs.com注册账号</li>
+<li>步骤三: 本地登录提交（切记提交自己的包必须切换到国外服务器）</li>
+<li>测试（创建day23开发目录，执行命令<code>npm install itcast-php-teacher</code>）</li>
+</ul>
+</li>
+</ol>
+<h5 id="2-6-总结："><a href="#2-6-总结：" class="headerlink" title="2-6 总结："></a>2-6 总结：</h5><ol>
+<li>NPM ： 就是一个工具，用于管理项目所需依赖</li>
+<li>语法 ： <code>npm install/unistall</code>模块/包（ps: -g命令行执行/全局目录     –save-dev 开发环境）</li>
+<li>服务器加速，通过npm工具</li>
+<li>自定义脚本工具： 修改<code>package.json</code>的scripts键即可</li>
+<li>自定义发布： <code>node login</code> &amp; <code>node publish</code></li>
+</ol>
+<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h5 id="3-1-模块（nodemon自动重启服务，第三方模块）"><a href="#3-1-模块（nodemon自动重启服务，第三方模块）" class="headerlink" title="3-1 模块（nodemon自动重启服务，第三方模块）"></a>3-1 模块（nodemon自动重启服务，第三方模块）</h5><ol>
+<li>简介<ul>
+<li> 发现： 每次修改js代码都得重新启动服务</li>
+<li> 增加 ： 工作量解决，通过nodemon检测文件修改自动重启</li>
+</ul>
+</li>
+<li>使用<ul>
+<li>步骤一： 初始化项目（ps.自动创建package.json文件，作用: 描述项目依赖）</li>
+<li>安装（npm install nodemon –save–dev -g）</li>
+</ul>
+</li>
+</ol>
+<h5 id="3-2-Express模块"><a href="#3-2-Express模块" class="headerlink" title="3-2 Express模块"></a>3-2 Express模块</h5><ol>
+<li><p>Express简介：</p>
+<ul>
+<li>基于nodejs开发的一个框架</li>
+<li>加快项目开发，便于团队协作</li>
+</ul>
+</li>
+<li><p>使用（初体验）</p>
+<ul>
+<li>步骤一 ： 创建day24_express 开发目录</li>
+<li>步骤2： 安装express框架</li>
+</ul>
+</li>
+<li><ul>
+<li>npm init -y</li>
+<li>npm install express</li>
+</ul>
+</li>
+<li><p>```js<br>//1.引入模块<br>var express = require(‘express’)</p>
+<p>// 2. 创建web服务器<br>var app = express()</p>
+<p>//3. 监听请求<br>app.get(‘/‘, function(req, res) {</p>
+<pre><code>//end()  响应字符串（乱码）
+//send() 相应字符串（自动识别）
+// render() 响应字符串（自动识别，只能打开指定文件字符串并响应）
+
+res.end(&quot;哥哥来抓我呀,&lt;a href = &#39;http://nn.com&#39;&gt;点击进入我的世界&lt;/a&gt;&quot;)
+</code></pre>
+<p>})</p>
+<p>//4. 启动服务<br>app.listen(8080, function() {</p>
+<pre><code>console.log(&quot;启动成功，访问 http://loacalhost:8080&quot;);
+</code></pre>
+<p>})</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">##### 3-3 Express框架（配置模板引擎）</span><br><span class="line"></span><br><span class="line">1. 说明： 默认通过公end或send渲染，无法加载视图，所以得自己配置默认板块引擎官方以前推荐用jade现在升级为pug也有的用ejs个人推荐art模板引擎</span><br><span class="line">2. 文档： http://aui.github.io/art-template/zh-cn/express/</span><br><span class="line">3. - 步骤一： 安装art-template模板引擎</span><br><span class="line">     - npm install art-template</span><br><span class="line">     - npm install express-art-template</span><br><span class="line"></span><br><span class="line">##### 3-4 Express框架-- 路由</span><br><span class="line"></span><br><span class="line">1. 简介： </span><br><span class="line">   - 路由是什么： 网址</span><br><span class="line">   - 路由参数： 网址参数</span><br><span class="line">   - 在PHP中作用， 声明交给哪个控制器的哪个方法处理</span><br><span class="line">   - 在NodeJS中作用： 交给指定匿名函数处理</span><br><span class="line"></span><br><span class="line">2. Http请求类型或者方式： get/post/delete/put等</span><br><span class="line">   - app.HTTP请求类型（请求路径，回调函数）</span><br><span class="line">     - 特性： get只能接收get请求，post只能接受post请求，多学一招：all</span><br><span class="line">   - app.use(请求路径， 回调函数)</span><br><span class="line">     - 特性： 匹配所有类型请求</span><br><span class="line">     - 特性：**use非完全匹配**（ps. 只需要url前面匹配请求路径即可匹配）</span><br><span class="line">       - /public/css/test.css</span><br><span class="line">       - app.use(&#x27;/public&#x27;,fn)可以</span><br><span class="line">       - app.use(&#x27;/public2&#x27;,fn)  不行</span><br><span class="line">3. app.HTTP请求类型（请求路径/:参数名/.../:参数名，回调函数）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">##### 3-5 Express框架 -- 托管静态文件</span><br><span class="line"></span><br><span class="line">1. </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 第四章 ES6语法</span><br><span class="line"></span><br><span class="line">##### 4-1 Symbol新数据类型</span><br><span class="line"></span><br><span class="line">1. [手册](http://es6.ruanyifeng.com/#README)</span><br><span class="line"></span><br><span class="line">2. 数据类型</span><br><span class="line"></span><br><span class="line">   - 基本类型: 字符串、布尔、数值型（整数、小数）</span><br><span class="line">   - 复合类型： 数组、对象</span><br><span class="line">   - 特殊类型： null、undefined</span><br><span class="line"></span><br><span class="line">3. 新Symbol数据类型</span><br><span class="line"></span><br><span class="line">   - 作用： 生成独一无二的值</span><br><span class="line"></span><br><span class="line">   - ```js</span><br><span class="line">     //无值</span><br><span class="line">     var str1 = Symbol()</span><br><span class="line">     var str2 = Symbol()</span><br><span class="line">     log(str1 === str2) //false</span><br><span class="line">     //有值</span><br><span class="line">     var str1 = Symbol(&quot;itcast&quot;)</span><br><span class="line">     var str2 = Symbol(&quot;itcast&quot;)</span><br><span class="line">     log(str1 === str2)	//false </span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="4-2-Set数据结构以及Map数据结构"><a href="#4-2-Set数据结构以及Map数据结构" class="headerlink" title="4-2 Set数据结构以及Map数据结构"></a>4-2 Set数据结构以及Map数据结构</h5><ol>
+<li><p>Set</p>
+<ul>
+<li><p>概念： 类似数组，成员唯一</p>
+</li>
+<li><p>语法： s.add/delete/has(成员) &amp;  s.clear()</p>
+</li>
+<li><p>场景： 数组去重，代码[..new Set(arr)]</p>
+</li>
+<li><p>练习 ：初始化set类型值为1/2/3 -&gt; 统计 -&gt;添加值 -&gt; 统计 -&gt; 清楚 -&gt; 统计</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> set = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">log(set.size)	<span class="comment">//3</span></span><br><span class="line">set.add(<span class="number">4</span>)</span><br><span class="line">log(set.size)	<span class="comment">//4</span></span><br><span class="line">set.clear()</span><br><span class="line">log(set.size)	<span class="comment">//0</span></span><br><span class="line">log(<span class="string">&#x27;------------------------&#x27;</span>)</span><br><span class="line"><span class="comment">//练习： 通过set类型数值1、2、3、4、5、3、4、5值去重,返回set对象</span></span><br><span class="line"><span class="comment">// 赋值：[...Set对象] 会将里面的值挨个赋给数组成员</span></span><br><span class="line"><span class="keyword">var</span> arr = [...new <span class="built_in">Set</span>([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,,<span class="number">5</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])]</span><br><span class="line">log(arr)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>Map数据结构</p>
+<ul>
+<li><p>类似于对象，但键不限于字符串</p>
+</li>
+<li><p>设置a键：111 -&gt; 获取，设置[‘b’]键：222 -&gt; 获取 -&gt;通过扩展运算符获取键值</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>()</span><br><span class="line">log(map)</span><br><span class="line">map.set(<span class="string">&#x27;a&#x27;</span>,<span class="number">111</span>)</span><br><span class="line">log(map.get(<span class="string">&#x27;a&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">//有问题，对象不能直接写，需要先复制给变量才可以获取其值</span></span><br><span class="line">map.set([<span class="string">&#x27;b&#x27;</span>],<span class="number">222</span>)</span><br><span class="line">log(map.get([<span class="string">&#x27;b&#x27;</span>]))</span><br><span class="line"></span><br><span class="line"><span class="comment">//没问题：</span></span><br><span class="line"><span class="keyword">var</span> tmp = [<span class="string">&#x27;b&#x27;</span>]</span><br><span class="line">map.set(tmp, <span class="number">222</span>)</span><br><span class="line">log(map.get(tmp))</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h5 id="4-3-循环"><a href="#4-3-循环" class="headerlink" title="4-3 循环"></a>4-3 循环</h5><ol>
+<li>```js<br>// for while do..<br>var arr = [‘a’,’b’,’c’];<br>for(var i = 0;i &lt; arr.length; i++){<pre><code>log(&quot;键&quot;,i,&quot;值：&quot;,arr[i])
+</code></pre>
+}// 数值 forEach 只能遍历数组<br>var arr = [‘a’,’b’,’c’];<br>arr.firEach(function(item, index){<pre><code>log(&#39;键&#39;, indexitem, &#39;值&#39;，)
+</code></pre>
+})//for…in 推荐遍历对象<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. ```js</span><br><span class="line">   // 在ES6中遍历数组： for...of(更强，可以遍历数组、字符串、映射、结合等数据结构)</span><br><span class="line">   var arr = [&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;];</span><br><span class="line">   for(var val of arr)&#123;</span><br><span class="line">       log(&#x27;值：&#x27; + val)</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="4-4-函数的扩展"><a href="#4-4-函数的扩展" class="headerlink" title="4-4 函数的扩展"></a>4-4 函数的扩展</h5><ol>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> name = name ? name: <span class="string">&quot;&quot;</span></span><br><span class="line">&#125;    </span><br><span class="line"></span><br><span class="line"><span class="comment">//ES6语法后</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">name=<span class="string">&quot;悟空&quot;</span>,sex = <span class="string">&quot;公&quot;</span></span>)</span>&#123;</span><br><span class="line">    log(name,sex)</span><br><span class="line">&#125;</span><br><span class="line">fn()</span><br><span class="line">fn(<span class="string">&#x27;其他&#x27;</span>)</span><br><span class="line">fn(<span class="string">&#x27;八戒&#x27;</span>,<span class="string">&#x27;母&#x27;</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>箭头函数 : </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">	<span class="comment">//需求，通过ES6语法仿写数组 3个参数 ，1个参数，没有参数</span></span><br><span class="line">    <span class="comment">//function fn(name , age , sex) &#123;</span></span><br><span class="line">    	<span class="comment">//console.log(&quot;函数没毛病&quot;)</span></span><br><span class="line">	<span class="comment">//&#125;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//旧语法： function fn(形参1,...形参n)&#123;&#125;</span></span><br><span class="line">    <span class="comment">//新语法： (形参1，...形参n) =&gt; &#123;&#125;</span></span><br><span class="line">    <span class="comment">//注意 ： 只有一个形参 小括号可以不写，函数体只有一行代码  大括号可以不写</span></span><br><span class="line">    <span class="keyword">var</span> fn0 = <span class="function">() =&gt;</span> log(<span class="string">&#x27;函数没毛病&#x27;</span>)</span><br><span class="line">	<span class="keyword">var</span> fn1 = <span class="function"><span class="params">name</span> =&gt;</span> log(<span class="string">&#x27;函数没毛病&#x27;</span>)</span><br><span class="line">    <span class="keyword">var</span> fn2 = <span class="function">(<span class="params">name,age</span>) =&gt;</span> log(<span class="string">&#x27;函数没毛病&#x27;</span>)</span><br><span class="line">    </span><br><span class="line">    fn0()</span><br><span class="line">	fn1(<span class="string">&#x27;测试1&#x27;</span>)</span><br><span class="line">	fn2(<span class="string">&#x27;测试2&#x27;</span>,<span class="number">18</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>rest参数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//function fn()&#123;</span></span><br><span class="line">  <span class="comment">//  log(arguments)	//获取所有实参，不确定实参个数</span></span><br><span class="line">    <span class="comment">//for(var i = 0;i&lt;arguments.length;i++)&#123;</span></span><br><span class="line">      <span class="comment">//  log(arguments[i])</span></span><br><span class="line">    <span class="comment">//&#125;</span></span><br><span class="line"><span class="comment">//&#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES 6 语法之后</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//不加...则将第一个实参复制给vals</span></span><br><span class="line"><span class="comment">// 加...则将所有值赋给vals 整个数组</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">...vals</span>)</span>&#123;</span><br><span class="line">    log(vals)    <span class="comment">//输出数组&#123;2,3,4,5&#125;</span></span><br><span class="line">&#125;</span><br><span class="line">fn(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">log(<span class="string">&#x27;--------------&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 问： rest参数和arguments区别</span></span><br><span class="line"><span class="comment">// 答： rest参数更加灵活</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn2</span>(<span class="params">val, ...vals</span>)</span>&#123;</span><br><span class="line">    log(val)</span><br><span class="line">    log(vals)</span><br><span class="line">&#125;</span><br><span class="line">fn2(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">56</span>)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="4-5-字符串的扩展"><a href="#4-5-字符串的扩展" class="headerlink" title="4-5 字符串的扩展"></a>4-5 字符串的扩展</h5><ol>
+<li><p>repeat函数： 平铺指定次数，如：<code>&#39;x&#39;.repeat(3)        //xxx</code></p>
+</li>
+<li><p>模板字符串 ： 传统字符串： 传统在JS中显示大段HTML通过加号拼接，现在</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">	<span class="keyword">var</span> str = <span class="string">&#x27;itcast_&#x27;</span></span><br><span class="line">	log(str.repeat(<span class="number">3</span>))</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> name = <span class="string">&#x27;你好&#x27;</span></span><br><span class="line">    <span class="comment">// 旧方法</span></span><br><span class="line">    <span class="keyword">var</span> html = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    html += <span class="string">&#x27;&lt;ul&gt;&#x27;</span></span><br><span class="line">	html += <span class="string">&#x27;&lt;li&gt;第&#x27;</span>+name+<span class="string">&#x27;个&lt;/li&gt;&#x27;</span></span><br><span class="line">	html += <span class="string">&#x27;&lt;/ul&gt;&#x27;</span></span><br><span class="line">	log(html)</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 新的方法</span></span><br><span class="line">	<span class="keyword">var</span> html = <span class="string">&#x27;&lt;ul&gt;</span></span><br><span class="line"><span class="string">		&lt;li&gt;第$&#123;name&#125;个&lt;/li&gt;</span></span><br><span class="line"><span class="string">		&lt;li&gt;第二个&lt;/li&gt;</span></span><br><span class="line"><span class="string">	&lt;/ul&gt;&#x27;</span></span><br><span class="line">log(html)</span><br><span class="line">	</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="4-6-模块module以及class类"><a href="#4-6-模块module以及class类" class="headerlink" title="4-6 模块module以及class类"></a>4-6 模块module以及class类</h5><h5 id="4-7-异步回调"><a href="#4-7-异步回调" class="headerlink" title="4-7 异步回调"></a>4-7 异步回调</h5><ol>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    <span class="keyword">if</span>(成功) resolve(数据)</span><br><span class="line">    <span class="keyword">else</span> reject(错误信息)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve,reject</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    <span class="keyword">if</span>(成功) resolve(数据)</span><br><span class="line">    <span class="keyword">else</span> reject(错误信息)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">p1.then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    成功执行</span><br><span class="line">    <span class="keyword">return</span> p2</span><br><span class="line">&#125;).function(err)&#123;</span><br><span class="line">    失败执行</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
 
       
 
@@ -283,7 +685,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://hannah-bingo.github.io/2021/08/28/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://hannah-bingo.github.io/2021/08/20/C_node/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -297,18 +699,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/08/29/B_%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%BD%91%E9%A1%B5%E7%89%B9%E6%95%88/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/08/20/C_ajax%E5%85%A5%E9%97%A8/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          移动端网页特效
+          ajax入门
         
       </div>
     </a>
   
   
-    <a href="/2021/08/25/A_%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">移动web开发流式布局</div>
+    <a href="/2021/08/20/D_git/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git基础</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -335,7 +737,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%EF%BC%88day-1%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">第一章 （day_1）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-1-Node-JS%E7%AE%80%E4%BB%8B"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1-1 Node JS简介</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-2-Node-js%E5%88%9D%E4%BD%93%E9%AA%8C-REPL"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">1-2 Node.js初体验(REPL)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-2-%E5%86%85%E7%BD%AEos%E6%A8%A1%E5%9D%97"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">1-2 内置os模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-3-%E5%86%85%E7%BD%AEpath%E6%A8%A1%E5%9D%97"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">1-3 内置path模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-url%E6%A8%A1%E5%9D%97"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">1- 4 url模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-6-%E5%86%85%E7%BD%AEhttp%E6%A8%A1%E5%9D%97%EF%BC%9A"><span class="toc-number">1.0.0.6.</span> <span class="toc-text">1-6 内置http模块：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-7-%E7%95%99%E8%A8%80%E6%9D%BF%E6%A1%88%E4%BE%8B%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.0.0.7.</span> <span class="toc-text">1-7 留言板案例实现</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-NodeJS%EF%BC%88NPM%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%A8%A1%E5%9D%97%E5%BC%95%E6%93%8E%E3%80%81Express%E6%A1%86%E6%9E%B6%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">第二章 NodeJS（NPM使用，模块引擎、Express框架）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-NPM%E7%AE%80%E4%BB%8B"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">2-1 NPM简介</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-NPM%E6%A8%A1%E5%9D%97%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="toc-number">2.0.0.2.</span> <span class="toc-text">2-2 NPM模块版本控制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-3-NPM%E6%BA%90%E7%AE%A1%E7%90%86"><span class="toc-number">2.0.0.3.</span> <span class="toc-text">2-3 NPM源管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-4-NPM-%E8%87%AA%E5%AE%9A%E4%B9%89%E8%84%9A%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="toc-number">2.0.0.4.</span> <span class="toc-text">2-4 NPM 自定义脚本命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-5-NPM%E5%8C%85%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%91%E5%B8%83"><span class="toc-number">2.0.0.5.</span> <span class="toc-text">2-5 NPM包自定义发布</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-6-%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="toc-number">2.0.0.6.</span> <span class="toc-text">2-6 总结：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="toc-number">3.</span> <span class="toc-text">第三章</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-1-%E6%A8%A1%E5%9D%97%EF%BC%88nodemon%E8%87%AA%E5%8A%A8%E9%87%8D%E5%90%AF%E6%9C%8D%E5%8A%A1%EF%BC%8C%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A8%A1%E5%9D%97%EF%BC%89"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">3-1 模块（nodemon自动重启服务，第三方模块）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-Express%E6%A8%A1%E5%9D%97"><span class="toc-number">3.0.0.2.</span> <span class="toc-text">3-2 Express模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-2-Set%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%BB%A5%E5%8F%8AMap%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">3.0.0.3.</span> <span class="toc-text">4-2 Set数据结构以及Map数据结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-3-%E5%BE%AA%E7%8E%AF"><span class="toc-number">3.0.0.4.</span> <span class="toc-text">4-3 循环</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-4-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A9%E5%B1%95"><span class="toc-number">3.0.0.5.</span> <span class="toc-text">4-4 函数的扩展</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-5-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%89%A9%E5%B1%95"><span class="toc-number">3.0.0.6.</span> <span class="toc-text">4-5 字符串的扩展</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-6-%E6%A8%A1%E5%9D%97module%E4%BB%A5%E5%8F%8Aclass%E7%B1%BB"><span class="toc-number">3.0.0.7.</span> <span class="toc-text">4-6 模块module以及class类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-7-%E5%BC%82%E6%AD%A5%E5%9B%9E%E8%B0%83"><span class="toc-number">3.0.0.8.</span> <span class="toc-text">4-7 异步回调</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -349,7 +751,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hello-world" data-title="Hello World" data-url="http://hannah-bingo.github.io/2021/08/28/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="C_node" data-title="node.js" data-url="http://hannah-bingo.github.io/2021/08/20/C_node/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -372,8 +774,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://hannah-bingo.github.io/2021/08/28/hello-world/", 
-    sourceId: "hello-world",
+    url: "http://hannah-bingo.github.io/2021/08/20/C_node/", 
+    sourceId: "C_node",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -382,7 +784,7 @@
   
 
   
-  <div id="SOHUCS" sid="hello-world" ></div> 
+  <div id="SOHUCS" sid="C_node" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
